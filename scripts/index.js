@@ -131,12 +131,12 @@ function next_pageone() {
     $("#next_pageone_two").addClass('animated zoomIn');
     $("#next_pageone_three").addClass('animated zoomIn');
     $("#next_pageone_four").addClass('animated flash');
-    // setTimeout(function () {
-    //     $("#next_pageone_four").addClass('animated flash');
-    // }, 3000);
-    // setTimeout(function () {
-    //     $.fn.fullpage.moveTo(14, 0);
-    // }, 8500);
+    setTimeout(function () {
+        $("#next_pageone_four").addClass('animated flash');
+    }, 3000);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(14, 0);
+    }, 8500);
 
 }
 
