@@ -60,7 +60,8 @@
 }
 
 #next_pageone_one img {
-    width: 80%;
+    width: 5.18rem;
+    height:1.4rem;
 }
 
 #next_pageone_two {
@@ -73,7 +74,8 @@
 }
 
 #next_pageone_two img {
-    width: 75%;
+    width: 4.86rem;
+    height:1.2rem;
 }
 
 #next_pageone_three {
@@ -87,7 +89,8 @@
 }
 
 #next_pageone_three img {
-    width: 70%;
+    width: 4.47rem;
+    height:1.34rem;
 }
 
 #next_pageone_four {
@@ -103,7 +106,8 @@
 }
 
 #next_pageone_four img {
-    width: 100%;
+    width:6.4rem;
+    height:auto;
 }
 
 
@@ -630,7 +634,77 @@
     height: 8.85rem;
 }
 
-
+/* 第5屏*/
+#next_pagefive-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/two/5_bg.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+.next_pagefive #next_five-one {
+    position: absolute;
+    left:0;
+    top: 50%;
+    margin-top:-5.3rem;
+    width: 100%;
+    text-align: center;
+    animation-duration: 2s;
+    opacity: 0.5;   
+}
+#next_five-one img{
+    width:50%;
+    height:50%;
+}
+.next_pagefive #next_five-one.rotateIn img{
+    width: 5.58rem;
+    height:5.48rem;
+    opacity: 1;
+}
+#next_five-two {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top:0.4rem;
+    width: 100%;
+    text-align: center;
+    animation-duration: 1s;
+    opacity: 0;
+}
+#next_five-two img{
+    width: 2.17rem;
+    height:1.23rem;
+}
+#next_five-three {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    margin-top:1.7rem;
+    text-align: center;
+    animation-duration: 1s;
+    opacity: 0;
+}
+#next_five-three img{
+    width: 2.41rem;
+    height:0.86rem;
+}
+#next_five-four {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top:2.9rem;
+    width: 100%;
+    text-align: center;
+    animation-duration: 1s;
+    opacity: 0;
+}
+#next_five-four img{
+    width: 3.67rem;
+    height:0.9rem;
+}
 /* 第6屏 */
 
 #next_pagesix-bg {
