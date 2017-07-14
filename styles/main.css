@@ -1,0 +1,1418 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+body {
+    font-family: arial, helvetica;
+    color: #333;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    position: relative;
+    display: none;
+}
+
+
+/* 花朵头部和尾部公共定位 */
+
+#base-bottom-flower img {
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+}
+
+#three-bottom-flower img,
+#four-bottom-flower img {
+    position: absolute;
+    left: 0;
+    bottom: -0.22rem;
+    width: 100%;
+}
+
+#base-top-flower img {
+    position: absolute;
+    left: 0;
+    top: 0rem;
+    width: 100%;
+}
+
+
+/* 公共背景 */
+
+#base-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/11bg.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.pegeten #base-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/10_bg.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+
+/* 第三屏 */
+
+#three-one {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#three-one img {
+    width: 3.14rem;
+    height: 2.06rem;
+    margin: 0 auto;
+}
+
+#three-two {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -3.0rem;
+    margin-left: -2.95rem;
+    opacity: 0;
+}
+
+#three-two img {
+    width: 2.48rem;
+    height: 1.69rem;
+}
+
+#three-three {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    margin-top: -2.9rem;
+    margin-right: -2.85rem;
+    opacity: 0;
+}
+
+#three-three img {
+    width: 2.49rem;
+    height: 2.13rem;
+}
+
+#three-four {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    margin-bottom: -3.2rem;
+    margin-left: -2.3rem;
+    opacity: 0;
+}
+
+#three-four img {
+    width: 2.35rem;
+    height: 1.84rem;
+}
+
+.pagethree.active #three-bg {
+    animation-delay: 0.2s;
+}
+
+.pagethree.active #three-one {
+    animation-delay: 1s;
+}
+
+.pagethree.active #three-two {
+    animation-delay: 1.5s;
+}
+
+.pagethree.active #three-three {
+    animation-delay: 2s;
+}
+
+.pagethree.active #three-four {
+    animation-delay: 2.5s;
+}
+
+
+/* 第四屏 */
+
+#four-one {
+    left: 0;
+    top: 50%;
+    margin-top: -1rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+#four-one img {
+    width: 2.97rem;
+    height: 0.69rem;
+}
+
+.pagefour.active #four-one {
+    animation-delay: 0.5s;
+}
+
+
+/* 第5屏 */
+
+#five-bg-inside {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    background: url('../images/bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    /*opacity: 0;*/
+    animation-duration: 0.5s;
+}
+
+#girl {
+    position: absolute;
+    left: 0.2rem;
+    bottom: -0.22rem;
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#girl img {
+    width: 2.71rem;
+    height: 4.72rem;
+}
+
+#boy {
+    position: absolute;
+    right: 0.2rem;
+    bottom: -0.22rem;
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#boy img {
+    width: 3.23rem;
+    height: 5.23rem;
+}
+
+#max-love {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.7rem;
+    margin-top: -3.7rem;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#max-love img {
+    width: 4.24rem;
+    height: 3.52rem;
+}
+
+#max-love-font {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.7rem;
+    margin-top: -3.7rem;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#max-love-font img {
+    width: 4.24rem;
+    height: 3.52rem;
+}
+
+#min-love {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.7rem;
+    margin-top: -0.6rem;
+    opacity: 0;
+    animation-duration: 1.5s;
+}
+
+#min-love img {
+    width: 0.57rem;
+    height: 0.46rem;
+}
+
+.pagethree.active #boy {
+    animation-delay: 0.2s;
+}
+
+.pagethree.active #girl {
+    animation-delay: 0.2s;
+}
+
+.pagethree.active #min-love {
+    animation-delay: 1.5s;
+}
+
+.pagethree.active #max-love {
+    animation-delay: 2.5s;
+}
+
+.pagethree.active #max-love-font {
+    animation-delay: 4s;
+}
+
+
+/* 第6屏 */
+
+#six-people {
+    position: absolute;
+    left: 0;
+    bottom: -0.22rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+#six-people img {
+    width: 5.97rem;
+    height: 5.26rem;
+}
+
+#six-one {
+    position: absolute;
+    left: 0;
+    top: 1.8rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#six-one img {
+    width: 3.97rem;
+    height: 0.48rem;
+}
+
+#six-two {
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#six-two img {
+    width: 1.43rem;
+    height: 3.03rem;
+}
+
+#six-three {
+    position: absolute;
+    left: 0;
+    top: 2.9em;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    animation-duration: 4s;
+}
+
+#six-three img {
+    width: 2.73rem;
+    height: 1.17rem;
+}
+
+#six-four {
+    position: absolute;
+    right: 0;
+    top: 2.7em;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#six-four img {
+    width: 1.08rem;
+    height: 2.47rem;
+}
+
+.pageSix.active #six-one {
+    animation-delay: 0.5s;
+}
+
+.pageSix.active #six-two {
+    animation-delay: 0.5s;
+}
+
+.pageSix.active #six-three {
+    animation-delay: 3s;
+}
+
+.pageSix.active #six-four {
+    animation-delay: 3s;
+}
+
+
+/* 第七屏 */
+
+#seven-people {
+    position: absolute;
+    left: 0;
+    bottom: -0.22rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+#seven-people img {
+    width: 5.97rem;
+    height: 5.26rem;
+}
+
+#seven-two img {
+    width: 2.74rem;
+    height: 1.18rem;
+}
+
+#seven-one img {
+    width: 2.96rem;
+    height: 0.48rem;
+}
+
+#seven-three img {
+    width: 1.46rem;
+    height: 1.27rem;
+}
+
+#seven-four img {
+    width: 1.23rem;
+    height: 0.96rem;
+}
+
+#seven-five img {
+    width: 1.08rem;
+    height: 0.93rem;
+}
+
+#seven-six img {
+    width: 1.06rem;
+    height: 0.82rem;
+}
+
+#seven-seven img {
+    width: 1.08rem;
+    height: 0.93rem;
+}
+
+#seven-eight img {
+    width: 1.06rem;
+    height: 0.82rem;
+}
+
+#seven-one {
+    position: absolute;
+    left: 0;
+    top: 2.04rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#seven-two {
+    position: absolute;
+    left: 0;
+    top: 3.2rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+#seven-three {
+    position: absolute;
+    left: -0.48rem;
+    top: 4.84rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#seven-four {
+    position: absolute;
+    left: 1.2rem;
+    top: 4.84rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#seven-five {
+    position: absolute;
+    left: -2.1rem;
+    top: 4.34rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#seven-six {
+    position: absolute;
+    left: 2.24rem;
+    top: 4.24rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#seven-seven {
+    position: absolute;
+    left: -1.5rem;
+    top: 3.34rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#seven-eight {
+    position: absolute;
+    left: -0.3rem;
+    top: 3.5rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+
+/* 第十屏 */
+
+#ten-people {
+    position: absolute;
+    left: 0;
+    bottom: -0.22rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+#ten-people img {
+    width: 3.26rem;
+    height: 3.49rem;
+}
+
+#ten-two img {
+    width: 3rem;
+    height: 0.48rem;
+}
+
+#ten-one img {
+    width: 4.47rem;
+    height: 0.48rem;
+}
+
+#ten-three img {
+    width: 4.19rem;
+    height: 0.48rem;
+}
+
+#ten-four img {
+    width: 1.84rem;
+    height: auto;
+}
+
+#ten-five img {
+    width: 0.76rem;
+    height: 0.7rem;
+}
+
+#ten-six img {
+    width: 0.64rem;
+    height: 0.62rem;
+}
+
+#ten-seven img {
+    width: 1.08rem;
+    height: 0.93rem;
+}
+
+#ten-eight img {
+    width: 1.06rem;
+    height: 0.82rem;
+}
+
+#ten-nine img {
+    width: 1.44rem;
+    height: auto;
+}
+
+#ten-one {
+    position: absolute;
+    left: 0;
+    top: 2.04rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-two {
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-three {
+    position: absolute;
+    left: 0rem;
+    top: 3.89rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-four {
+    position: absolute;
+    left: -1.18rem;
+    top: 5.8rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-five {
+    position: absolute;
+    left: -0.92rem;
+    top: 0.6rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-six {
+    position: absolute;
+    left: 2.24rem;
+    top: 5.4rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-seven {
+    position: absolute;
+    left: 0.84rem;
+    top: 4.80rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-eight {
+    position: absolute;
+    left: -2rem;
+    top: 5.20rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#ten-nine {
+    position: absolute;
+    left: 1.06rem;
+    top: 6rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+
+/* 第十一屏 */
+
+#eleven-people {
+    position: absolute;
+    left: 0;
+    bottom: -0.22rem;
+    width: 100%;
+    text-align: center;
+}
+
+#eleven-people img {
+    width: 3.26rem;
+    height: 3.49rem;
+}
+
+#eleven-two img {
+    width: 2.59rem;
+    height: 0.63rem;
+}
+
+#eleven-one img {
+    width: 1.27rem;
+    height: 0.62rem;
+}
+
+#eleven-three img {
+    width: 3.19rem;
+    height: 2.61rem;
+}
+
+#eleven-one {
+    position: absolute;
+    left: 0;
+    top: 2.04rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /* animation-duration: 4s; */
+}
+
+#eleven-two {
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#eleven-three {
+    position: absolute;
+    left: 0rem;
+    top: 4.5rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 4s;
+}
+
+#girl2 {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0;
+    opacity: 0;
+    animation-duration: 3s;
+}
+
+#girl2 img {
+    width: 3rem;
+    height: 3.29rem;
+}
+
+#boy2 {
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0;
+    opacity: 0;
+    animation-duration: 3s;
+}
+
+#boy2 img {
+    width: 3.03rem;
+    height: 3.33rem;
+}
+
+
+/* 第十二屏 */
+
+#twelve-one img {
+    width: 3.57rem;
+    height: 0.63rem;
+}
+
+#twelve-two img {
+    width: 2.92rem;
+    height: 0.62rem;
+}
+
+#twelve-three img {
+    width: 2.22rem;
+    height: 1.88rem;
+}
+
+#twelve-five img {
+    width: 2.56rem;
+    height: 0.61rem;
+}
+
+#twelve-four img {
+    width: 3.74rem;
+    height: 0.71rem;
+}
+
+#twelve-one {
+    position: absolute;
+    left: 0;
+    top: 2.04rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /*animation-duration: 4s; */
+}
+
+#twelve-two {
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /* animation-duration: 4s; */
+}
+
+#twelve-three {
+    position: absolute;
+    left: 0rem;
+    top: 5rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /* animation-duration: 4s; */
+}
+
+#twelve-four {
+    position: absolute;
+    left: 0rem;
+    top: 7.5rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /* animation-duration: 4s; */
+}
+
+#twelve-five {
+    position: absolute;
+    left: 0rem;
+    top: 8.4rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    /*animation-duration: 4s; */
+}
+
+.section {
+    overflow: hidden;
+}
+
+.section img.none {
+    display: none;
+}
+
+
+/* .section img#openSevenEye,
+.section img#openEightEye,
+.section img#openSixEye {
+    position: absolute;
+    right: 0.24rem;
+    bottom: 0;
+} */
+
+.section img#openEightEye {
+    right: 0.12rem;
+}
+
+.section #paeIndex-bottom-flower {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.section #paeIndex-bottom-flower img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -0.2rem;
+}
+
+.section #base-top-flower {
+    position: absolute;
+    left: 0;
+    top: 0rem;
+    width: 100%;
+}
+
+.section #base-top-flower img {
+    width: 100%;
+    height: auto;
+}
+
+.pageone #one-bg {
+    top: 0;
+    height: 100%;
+    background: url("../images/11bg.png") no-repeat center center;
+    background-size: 100% 100%;
+    animation-duration: 3s;
+}
+
+.pageone #one-one {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 1.38rem;
+    margin-left: -1.4rem;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-one img {
+    width: 2.92rem;
+    height: auto;
+}
+
+.pageone #one-two {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 1.82rem;
+    margin-left: -0.70rem;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-two img {
+    width: 1.416rem;
+}
+
+.pageone #one-three {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 2.28rem;
+    margin-left: -1.43rem;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-three img {
+    width: 2.86rem;
+}
+
+.pageone #one-four {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 2.98rem;
+    margin-left: -1.76rem;
+    animation-delay: 5s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-four img {
+    width: 3.52rem;
+}
+
+.pageone #one-six {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 3.48rem;
+    margin-left: -1.07rem;
+    animation-delay: 6s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-six img {
+    width: 2.14rem;
+}
+
+.pageone #one-seven {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 4.28rem;
+    margin-left: -0.43rem;
+    animation-delay: 7s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-seven img {
+    width: 0.87rem;
+}
+
+.pageone #one-eighty {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 4.78rem;
+    margin-left: -0.98rem;
+    animation-delay: 8s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-eighty img {
+    width: 1.96rem;
+}
+
+.pageone #one-nine {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 5.28rem;
+    margin-left: -1.43rem;
+    animation-delay: 9s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-nine img {
+    width: 2.87rem;
+}
+
+.pageone #one-ten {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 6.08rem;
+    margin-left: -1.28rem;
+    animation-delay: 10s;
+    animation-duration: 3s;
+    
+}
+
+.pageone #one-ten img {
+    width: 2.56rem;
+}
+
+.pagetow #two-bg {
+    top: 0;
+    height: 100%;
+    background: url("../images/11bg.png") no-repeat center center;
+    background-size: 100% 100%;
+    animation-duration: 1s;
+}
+
+.pagetow #two-one {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -1.76rem;
+    margin-top: -3.34rem;
+}
+
+.pagetow #two-one img {
+    width: 1.07rem;
+    height: 0.53rem;
+}
+
+.pagetow #two-two {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.3rem;
+    margin-left: -2.14rem;
+}
+
+.pagetow #two-two img {
+    width: 4.28rem;
+    height: 2.83rem;
+}
+
+.pagetow #two-three {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.3rem;
+    margin-left: 0.7rem;
+}
+
+.pagetow #two-three img {
+    width: 1.68rem;
+    height: 1.25rem;
+}
+
+.pagetow #two-four {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.6rem;
+    margin-left: -2.78rem;
+}
+
+.pagetow #two-four img {
+    width: 5.57rem;
+    height: 3.43rem;
+}
+
+.pageone div,
+.pagetow div,
+.pageeight div,
+.pagenine div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    -webkit-box-sizing: border-box;
+    /* Safari */
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.pageeight div:not(:nth-child(1)),
+.pagenine div:not(:nth-child(1)) {
+    display: flex;
+    align-items: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pageeight #eight-bg {
+    top: 0;
+    height: 100%;
+    background: url("../images/11bg.png") no-repeat center center;
+    background-size: 100% 100%;
+    animation-duration: 1s;
+}
+
+.pageeight img {
+    width: auto;
+    height: 0.53rem;
+}
+
+.pageeight #eight-one {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+.pageeight #eight-one img {
+    width: 97%;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    right: 0;
+}
+
+.pageeight #eight-two {
+    opacity: 0;
+    top: 2.3rem;
+}
+
+.pageeight #eight-three {
+    opacity: 0;
+    top: 3.06rem;
+}
+
+.pageeight #eight-four {
+    opacity: 0;
+    top: 3.82rem;
+}
+
+.pageeight #eight-five {
+    opacity: 0;
+    top: 4.62rem;
+}
+
+.pageeight #eight-six img,
+.pageeight #eight-seven img,
+.pageeight #eight-eight img,
+.pageeight #eight-nine img,
+.pageeight #eight-ten img,
+.pageeight #eight-eleven img,
+.pageeight #eight-twelve img {
+    width: 12%;
+    height: auto;
+}
+
+.pageeight #eight-six {
+    opacity: 0;
+    top: 2.94rem;
+    justify-content: flex-start;
+}
+
+.pageeight #eight-six img {
+    margin-left: 0.8rem;
+}
+
+.pageeight #eight-seven {
+    opacity: 0;
+    top: 1.98rem;
+    justify-content: flex-end;
+}
+
+.pageeight #eight-seven img {
+    margin-right: 0.7rem;
+}
+
+.pageeight #eight-eight {
+    opacity: 0;
+    top: 5.48rem;
+    justify-content: flex-start;
+}
+
+.pageeight #eight-eight img {
+    margin-left: 0.3rem;
+}
+
+.pageeight #eight-nine {
+    opacity: 0;
+    top: 5.15rem;
+    justify-content: flex-end;
+}
+
+.pageeight #eight-nine img {
+    margin-right: 0.12rem;
+}
+
+.pageeight #eight-ten {
+    opacity: 0;
+    top: 5.40rem;
+    justify-content: flex-start;
+}
+
+.pageeight #eight-ten img {
+    margin-left: 2.08rem;
+}
+
+.pageeight #eight-eleven {
+    opacity: 0;
+    top: 3rem;
+    justify-content: flex-end;
+}
+
+.pageeight #eight-eleven img {
+    margin-right: 0.02rem;
+}
+
+.pageeight #eight-twelve {
+    opacity: 0;
+    top: 5.4rem;
+}
+
+.pageeight #eight-twelve img {
+    margin-left: 0.94rem;
+}
+
+.pageeight #eight-bottom-flower {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pageeight #eight-bottom-flower img {
+    width: 100%;
+    height: auto;
+}
+
+.pagenine #nine-bg {
+    top: 0;
+    height: 100%;
+    background: url("../images/11bg.png") no-repeat center center;
+    background-size: 100% 100%;
+    animation-duration: 1s;
+}
+
+.pagenine img {
+    width: auto;
+    height: 0.48rem;
+}
+
+.pagenine #nineGirl {
+    bottom: 0;
+    opacity: 0;
+}
+
+.pagenine #nineGirl img {
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0;
+    animation-duration: 3s;
+    width: 2.71rem;
+    height: 4.72rem;
+}
+
+.pagenine #nineBoy {
+    bottom: 0;
+    opacity: 0;
+}
+
+.pagenine #nineBoy img {
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0;
+    animation-duration: 3s;
+    width: 2.71rem;
+    height: 4.72rem;
+}
+
+.pagenine #nine-two {
+    opacity: 0;
+    top: 2.3rem;
+}
+
+.pagenine #nine-three {
+    opacity: 0;
+    top: 3.36rem;
+}
+
+.pagenine #nine-four {
+    opacity: 0;
+    top: 4.42rem;
+}
+
+.pagenine #nine-five {
+    opacity: 0;
+    top: 5.48rem;
+}
+
+.pagenine #nine-bottom-flower,
+.pageeight #nine-bottom-flower {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pagenine #nine-bottom-flower img,
+.pageeight #nine-bottom-flower img {
+    width: 100%;
+    height: auto;
+}
+
+.pegeeleven #girl2.animated,
+.pegeeleven #boy2.animated {
+    opacity: 1;
+}
