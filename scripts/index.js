@@ -9,10 +9,6 @@ $(function() {
             if (index > 1) {
                 audioPlay('music');
             }
-            if (index > 13) {
-                document.getElementById('music').pause();
-                audioPlay('music2');
-            }
             if (index == 1) {
                 setTimeout(function() {
                     pageOne();
@@ -649,6 +645,7 @@ function audioPlay(elem) {
         });
     }
 }
+
 //微信摇一摇
 function weixinOpen() {
     //先判断设备是否支持HTML5摇一摇功能
