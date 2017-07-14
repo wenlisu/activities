@@ -6,6 +6,9 @@ $(function () {
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
         afterLoad: function (link, index) {
+            if (index > 1) {
+                audioPlay('music');
+            }
             if (index == 1) {
                 setTimeout(function () {
                     pageOne();
@@ -69,8 +72,16 @@ $(function () {
         },
         onLeave: function (index) {
             $('.section div div').removeClass();
+            if (index == 11) {
+                $("#girl2").animate({
+                    left: '-3.8rem'
+                })
+                $("#boy2").animate({
+                    right: '-3.8rem'
+                })
+            }
             //二部分第10页
-            if (index == 23) {
+            else if (index == 23) {
                 $("#next_ten-two").animate({
                     top: '2.8rem'
                 });
@@ -172,7 +183,6 @@ function pageOne() {
 }
 
 function pageTow() {
-    audioPlay('music');
     // $("#two-bg").addClass('animated fadeIn')
     setTimeout(function () {
         $("#two-one").addClass('animated fadeIn')
@@ -394,9 +404,13 @@ function pageEleven() {
         $("#eleven-three").addClass('animated fadeIn')
     }, 1000);
     setTimeout(function () {
-        $("#girl2").addClass('animated bounceInLeft')
-        $("#boy2").addClass('animated bounceInRight')
-    }, 1500);
+        $("#girl2").animate({
+            left: '0.2rem'
+        })
+        $("#boy2").animate({
+            right: '0.2rem'
+        })
+    }, 2000);
 }
 
 function pageTwelve() {
@@ -514,18 +528,20 @@ function weixin(event) {
             if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
                 WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
                     shakeAudio.play();
+                    $('#twelve-threeshake_box').addClass('shake_box_focus');
+                    clearTimeout(shakeTimeout);
+                    var shakeTimeout = setTimeout(function () {
+                        $('#twelve-three').removeClass('shake_box_focus');
+                    }, 1000)
+                    setTimeout(function () {
+                        $.fn.fullpage.moveTo(17, 0)
+                    }, 4000);
                 });
             }
-            $('#twelve-threeshake_box').addClass('shake_box_focus');
-            clearTimeout(shakeTimeout);
-            var shakeTimeout = setTimeout(function () {
-                $('#twelve-three').removeClass('shake_box_focus');
-            }, 1000)
+
             //进入到第二部分页面
 
-            setTimeout(function () {
-                $.fn.fullpage.moveTo(17, 0) // 去第二页 第一个横屏
-            }, 1000);
+
         }
 
         lastShakeX = curShakeX;
