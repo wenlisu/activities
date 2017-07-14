@@ -67,8 +67,16 @@ $(function () {
             }
 
         },
-        onLeave: function () {
+        onLeave: function (index) {
             $('.section div div').removeClass();
+            //二部分第10页
+            if(index == 23){
+            $("#next_ten-two").animate({top:'2.8rem'});
+            $("#next_ten-one").animate({top:'0.8rem'});
+            $("#next_ten-four").animate({top:'0rem'});
+            $('#next_ten-five').css('display','none');
+            $('#next_ten-five').animate({bottom:'-4.9rem'})
+            }
         }
     });
 });
@@ -105,11 +113,11 @@ function next_pageTen(){
     $("#next_ten-four").addClass('animated fadeInDown');
     $("#next_ten-three").addClass('animated fadeIn');
     setTimeout(function () {
-    $("#next_ten-two").animate({top:'1.5rem'});
-    $("#next_ten-one").animate({top:'-0.5rem'});
-    $("#next_ten-four").animate({top:'-1.3rem'});
-    $('#next_ten-five').css('display','block');
-    $('#next_ten-five').animate({bottom:'0'})
+        $("#next_ten-two").animate({top:'1.5rem'});
+        $("#next_ten-one").animate({top:'-0.5rem'});
+        $("#next_ten-four").animate({top:'-1.3rem'});
+        $('#next_ten-five').css('display','block');
+        $('#next_ten-five').animate({bottom:'0'})
      }, 6000);
 }
 
