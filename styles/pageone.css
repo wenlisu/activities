@@ -1006,7 +1006,7 @@ body {
     top: 50%;
     margin-left: -0.885rem;
     margin-top:-3.2rem;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-duration: 3s;
 }
 
@@ -1022,7 +1022,7 @@ body {
     top: 50%;
     margin-left: -1.78rem;
     margin-top: -2.55rem;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-duration: 3s;
 }
 
@@ -1037,8 +1037,8 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -2.2rem;
-    margin-top: -1.6rem;
-    animation-delay: 5s;
+    margin-top: -1.7rem;
+    animation-delay: 4s;
     animation-duration: 3s;
 }
 
@@ -1052,9 +1052,9 @@ body {
     position: absolute;
     left: 50%;
     top:50%;
-    margin-top:-0.95rem;
+    margin-top:-1.15rem;
     margin-left: -1.34rem;
-    animation-delay: 6s;
+    animation-delay: 5s;
     animation-duration: 3s;
 }
 
@@ -1069,8 +1069,8 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.545rem;
-    margin-top:0.15rem;
-    animation-delay: 7s;
+    margin-top:-0.05rem;
+    animation-delay: 6s;
     animation-duration: 3s;
 }
 
@@ -1085,8 +1085,8 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.23rem;
-    margin-top: 0.9rem;
-    animation-delay: 8s;
+    margin-top: 0.7rem;
+    animation-delay: 7s;
     animation-duration: 3s;
 }
 
@@ -1101,8 +1101,8 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.795rem;
-    margin-top:1.6rem;
-    animation-delay: 9s;
+    margin-top:1.35rem;
+    animation-delay: 8s;
     animation-duration: 3s;
 }
 
@@ -1117,8 +1117,8 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.6rem;
-    margin-top:2.6rem;
-    animation-delay: 10s;
+    margin-top:2.35rem;
+    animation-delay: 9s;
     animation-duration: 3s;
 }
 
@@ -1247,22 +1247,22 @@ body {
 
 .pageeight #eight-two {
     opacity: 0;
-    bottom: 8.5rem;
+    bottom: 8.05rem;
 }
 
 .pageeight #eight-three {
     opacity: 0;
-    bottom: 7.74rem;
+    bottom: 7.34rem;
 }
 
 .pageeight #eight-four {
     opacity: 0;
-    bottom: 6.92rem;
+    bottom: 6.65rem;
 }
 
 .pageeight #eight-five {
     opacity: 0;
-    bottom: 6.18rem;
+    bottom: 5.98rem;
 }
 
 .pageeight #eight-six img,
@@ -1278,7 +1278,7 @@ body {
 
 .pageeight #eight-six {
     opacity: 0;
-    bottom: 7.77rem;
+    bottom: 7.57rem;
     justify-content: flex-start;
 }
 
@@ -1288,7 +1288,7 @@ body {
 
 .pageeight #eight-seven {
     opacity: 0;
-    bottom: 8.7rem;
+    bottom: 8.5rem;
     justify-content: flex-end;
 }
 
@@ -1298,7 +1298,7 @@ body {
 
 .pageeight #eight-eight {
     opacity: 0;
-    bottom: 5.32rem;
+    bottom: 5.12rem;
     justify-content: flex-start;
 }
 
@@ -1308,7 +1308,7 @@ body {
 
 .pageeight #eight-nine {
     opacity: 0;
-    bottom: 5.65rem;
+    bottom: 5.3rem;
     justify-content: flex-end;
 }
 
@@ -1318,7 +1318,7 @@ body {
 
 .pageeight #eight-ten {
     opacity: 0;
-    bottom: 5.40rem;
+    bottom: 5.20rem;
     justify-content: flex-start;
 }
 
@@ -1328,7 +1328,7 @@ body {
 
 .pageeight #eight-eleven {
     opacity: 0;
-    bottom: 7.8rem;
+    bottom: 7.6rem;
     justify-content: flex-end;
 }
 
@@ -1338,7 +1338,7 @@ body {
 
 .pageeight #eight-twelve {
     opacity: 0;
-    bottom: 5.2rem;
+    bottom: 5rem;
 }
 
 .pageeight #eight-twelve img {
