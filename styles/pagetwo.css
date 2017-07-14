@@ -34,7 +34,9 @@
 
 
 /* 第一页 */
-
+.section.next_pageone div {
+    position: absolute;
+}
 .next_pageone #base_bg {
     position: absolute;
     left: 0;
