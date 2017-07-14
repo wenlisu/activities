@@ -138,13 +138,22 @@ function next_pageone() {
     $("#next_pageone_one").addClass('animated zoomIn');
     $("#next_pageone_two").addClass('animated zoomIn');
     $("#next_pageone_three").addClass('animated zoomIn');
-    $("#next_pageone_four").addClass('animated flash');
+    $("#next_pageone_four").addClass('animated zoomIn');
     setTimeout(function() {
-        $("#next_pageone_four").addClass('animated flash');
+        $("#next_pageone_one").addClass('animated zoomOut');
+    }, 4000);
+    setTimeout(function() {
+        $("#next_pageone_two").addClass('animated zoomOut');
+    }, 3000);
+    setTimeout(function() {
+        $("#next_pageone_three").addClass('animated zoomOut');
+    }, 2000);
+    setTimeout(function() {
+        $("#next_pageone_four").addClass('animated zoomOut');
     }, 3000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(14, 0);
-    }, 8500);
+    }, 5000);
 
 }
 
@@ -155,12 +164,19 @@ function next_pageTwo() {
     $("#next_two-four").addClass('animated zoomIn');
     setTimeout(function() {
         $("#next_two-one").addClass('animated zoomOut');
-        $("#next_two-two").addClass('animated zoomOut');
-        $("#next_two-three").addClass('animated zoomOut');
     }, 5000);
     setTimeout(function() {
+        $("#next_two-two").addClass('animated zoomOut');
+    }, 4000);
+    setTimeout(function() {
+        $("#next_two-three").addClass('animated zoomOut');
+    }, 3000);
+    setTimeout(function() {
+        $("#next_two-four").addClass('animated zoomOut');
+    }, 2000);
+    setTimeout(function() {
         $.fn.fullpage.moveTo(15, 0);
-    }, 8500);
+    }, 6000);
 }
 
 function next_pageThree() {
@@ -168,11 +184,13 @@ function next_pageThree() {
     $("#next_three-two").addClass('animated zoomIn');
     setTimeout(function() {
         $("#next_three-one").addClass('animated zoomOut');
-        $("#next_three-two").addClass('animated zoomOut');
     }, 3500);
     setTimeout(function() {
+        $("#next_three-two").addClass('animated zoomOut');
+    }, 2500);
+    setTimeout(function() {
         $.fn.fullpage.moveTo(16, 0);
-    }, 7000);
+    }, 4000);
 }
 
 function next_pageFour() {
@@ -188,9 +206,24 @@ function next_pageFour() {
         $("#next_four-four").addClass('animated zoomOut');
         $("#next_four-five").addClass('animated zoomOut');
     }, 5000);
+    // setTimeout(function() {
+    //     $("#next_four-one").addClass('animated zoomOut');
+    // }, 5000);
+    // setTimeout(function () {
+    //     $("#next_four-two").addClass('animated zoomOut');
+    // }, 4000);
+    // setTimeout(function () {
+    //     $("#next_four-three").addClass('animated zoomOut');
+    // }, 3000);
+    // setTimeout(function () {
+    //     $("#next_four-four").addClass('animated zoomOut');
+    // }, 2000);
+    // setTimeout(function () {
+    //     $("#next_four-five").addClass('animated zoomOut');
+    // }, 1000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(17, 0);
-    }, 10000);
+    }, 5500);
 }
 
 function next_pageFive() {
@@ -213,7 +246,7 @@ function next_pageFive() {
 
     setTimeout(function() {
         $.fn.fullpage.moveTo(18, 0);
-    }, 5000);
+    }, 6000);
 }
 
 function next_pageSix() {
@@ -231,7 +264,7 @@ function next_pageSix() {
     }, 7000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(19, 0);
-    }, 13000);
+    }, 10000);
 }
 
 function next_pageSeven() {
@@ -261,7 +294,7 @@ function next_pageEight() {
     }, 6000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(21, 0);
-    }, 11000);
+    }, 8000);
 }
 
 function next_pageNine() {
@@ -277,7 +310,7 @@ function next_pageNine() {
     }, 5000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(22, 0);
-    }, 10000);
+    }, 6500);
 }
 
 function next_pageTen() {
