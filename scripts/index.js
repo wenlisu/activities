@@ -205,9 +205,9 @@ function next_pageFive() {
         $("#next_five-three").addClass('animated zoomOutLeft');
         $("#next_five-four").addClass('animated zoomOutLeft');
     }, 4000);
-    setTimeout(function () {
+    setTimeout(function() {
         $.fn.fullpage.moveTo(18, 0);
-    }, 5000);
+    }, 10000);
 }
 
 function next_pageSix() {
