@@ -73,13 +73,11 @@ $(function() {
             if ($('.next_pagethree').hasClass('active')) {
                 next_pageThree();
             }
-<<<<<<< HEAD
             if ($('.next_pagefour').hasClass('active')) {
                 next_pageFour();
-=======
+            }
             if ($('.next_pagefive').hasClass('active')) {
                 next_pageFive();
->>>>>>> a8b733f2b30228e9762d61603118fea9c48c5b78
             }
             if ($('.next_pagesix').hasClass('active')) {
                 next_pageSix();
@@ -135,13 +133,8 @@ function next_pageone() {
     $("#next_pageone_one").addClass('animated zoomIn');
     $("#next_pageone_two").addClass('animated zoomIn');
     $("#next_pageone_three").addClass('animated zoomIn');
-<<<<<<< HEAD
-    // $("#next_pageone_four").addClass('animated flash');
-    setTimeout(function() {
-=======
     $("#next_pageone_four").addClass('animated flash');
     setTimeout(function () {
->>>>>>> a8b733f2b30228e9762d61603118fea9c48c5b78
         $("#next_pageone_four").addClass('animated flash');
     }, 3000);
     setTimeout(function() {
@@ -196,9 +189,6 @@ function next_pageFour() {
 }
 
 function next_pageFive() {
-<<<<<<< HEAD
-    setTimeout(function() {
-=======
     $("#next_five-one").addClass('animated rotateIn');
     setTimeout(function () {
         $("#next_five-two").addClass('animated fadeIn');
@@ -216,7 +206,6 @@ function next_pageFive() {
         $("#next_five-four").addClass('animated zoomOutLeft');
     }, 4000);
     setTimeout(function () {
->>>>>>> a8b733f2b30228e9762d61603118fea9c48c5b78
         $.fn.fullpage.moveTo(18, 0);
     }, 5000);
 }
