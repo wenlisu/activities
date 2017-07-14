@@ -2,9 +2,8 @@ $(function () {
     setTimeout(function () {
         pageOne();
     }, 50);
-
     $('#fullpage').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'page26', 'page27'],
         lazyLoading: true,
         afterLoad: function (link, index) {
             if (index == 1) {
@@ -56,15 +55,35 @@ $(function () {
                     pageTwelve();
                 }, 50);
                 weixinOpen();
+            } else if (index == 18) {
+                // setTimeout(function () {
+                pageTwentySix();
+                // }, 0);
+            }else if (index == 19) {
+                // setTimeout(function () {
+                pageTwentySeven();
+                // }, 0);
             }
+
         },
         onLeave: function () {
             $('.section div div').removeClass();
         }
     });
 });
-var eye_timer, changeSrc = './images/6_people.png',
-    defaultSrc = './images/7_people.png';
+var eye_timer, changeSrc = './images/one/6_people.png',
+    defaultSrc = './images/one/7_people.png';
+
+function pageTwentySix() {
+    $("#next_six-one").addClass('animated zoomIn');
+    $("#next_six-two").addClass('animated zoomIn');
+    $("#next_six-three").addClass('animated zoomIn');
+    $("#next_six-three").addClass('animated zoomIn');
+    $("#next_six-four").addClass('animated zoomIn');
+    $("#next_six-five").addClass('animated zoomIn');
+}
+
+
 
 function pageOne() {
     setTimeout(function () {
@@ -98,7 +117,6 @@ function pageOne() {
         $("#one-ten").addClass('animated fadeIn')
     }, 4500);
 }
-
 
 function pageTow() {
     audioPlay('music');
@@ -345,9 +363,8 @@ function pageTwelve() {
         $("#twelve-five").addClass('animated fadeIn')
     }, 2000);
 }
-
+//眨眼
 function eye(elem, src) {
-
     setTimeout(function () {
         $(elem).attr("src", changeSrc);
     }, 500);
@@ -357,6 +374,7 @@ function eye(elem, src) {
     }, 1500);
     clearInterval(eye_timer);
 }
+//微信配置
 wx.config({
     // 配置信息, 即使不正确也能使用 wx.ready
     debug: false,
@@ -366,7 +384,7 @@ wx.config({
     signature: '',
     jsApiList: []
 });
-
+//背景音乐
 function audioPlay(elem) {
     wx.ready(function () {
         document.getElementById(elem).play();
@@ -378,7 +396,7 @@ function audioPlay(elem) {
         });
     }
 }
-
+//微信摇一摇
 function weixinOpen() {
     //先判断设备是否支持HTML5摇一摇功能
     if (window.DeviceMotionEvent) {
