@@ -73,6 +73,7 @@ $(function() {
             if ($('.next_pagethree').hasClass('active')) {
                 next_pageThree();
             }
+
             if ($('.next_pagefour').hasClass('active')) {
                 next_pageFour();
             }
@@ -137,13 +138,13 @@ function next_pageone() {
     setTimeout(function () {
         $("#next_pageone_one").addClass('animated zoomOut');
     }, 4000);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_pageone_two").addClass('animated zoomOut');
     }, 3000);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_pageone_three").addClass('animated zoomOut');
     }, 2000);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_pageone_four").addClass('animated zoomOut');
     }, 4000);
     setTimeout(function() {
@@ -160,13 +161,13 @@ function next_pageTwo() {
     setTimeout(function() {
         $("#next_two-one").addClass('animated zoomOut');
     }, 5000);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_two-two").addClass('animated zoomOut');
     }, 4000);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_two-three").addClass('animated zoomOut');
     }, 3000);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_two-four").addClass('animated zoomOut');
     }, 5000);
     setTimeout(function() {
@@ -180,7 +181,7 @@ function next_pageThree() {
     setTimeout(function() {
         $("#next_three-one").addClass('animated zoomOut');
     }, 3500);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_three-two").addClass('animated zoomOut');
     }, 2500);
     setTimeout(function() {
@@ -232,12 +233,13 @@ function next_pageFive() {
     setTimeout(function () {
         $("#next_five-four").addClass('animated zoomIn opacity-class');
     }, 2900);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_five-one").addClass('animated zoomOutLeft');
         $("#next_five-two").addClass('animated zoomOutLeft');
         $("#next_five-three").addClass('animated zoomOutLeft');
         $("#next_five-four").addClass('animated zoomOutLeft');
     }, 4000);
+
     setTimeout(function() {
         $.fn.fullpage.moveTo(18, 0);
     }, 6000);
@@ -669,6 +671,7 @@ function audioPlay(elem) {
         });
     }
 }
+
 //微信摇一摇
 function weixinOpen() {
     //先判断设备是否支持HTML5摇一摇功能
