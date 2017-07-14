@@ -3,10 +3,9 @@ $(function () {
         pageOne();
     }, 50);
     $('#fullpage').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'next_pageone','next_pagetwo','next_pagethree','next_pagefour','next_pagefive','next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'next_pageone', 'next_pagetwo', 'next_pagethree', 'next_pagefour', 'next_pagefive', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
         afterLoad: function (link, index) {
-            console.log(index);
             if (index > 1) {
                 audioPlay('music');
             }
@@ -67,6 +66,12 @@ $(function () {
                 setTimeout(function () {
                     next_pageone();
                 }, 50);
+            }
+            if ($('.next_pagetwo').hasClass('active')) {
+                next_pageTwo();
+            }
+            if ($('.next_pagethree').hasClass('active')) {
+                next_pageThree();
             }
             if ($('.next_pagesix').hasClass('active')) {
                 next_pageSix();
@@ -130,6 +135,16 @@ function next_pageone() {
 
 }
 
+function next_pageTwo() {
+    $("#next_two-one").addClass('animated zoomIn');
+    $("#next_two-two").addClass('animated zoomIn');
+    $("#next_two-three").addClass('animated zoomIn');
+    $("#next_two-four").addClass('animated zoomIn');
+}
+function next_pageThree(){
+    $("#next_three-one").addClass('animated zoomIn');
+    $("#next_three-two").addClass('animated zoomIn');
+}
 function next_pageSix() {
     $("#next_six-one").addClass('animated zoomInLeft');
     $("#next_six-two").addClass('animated zoomInLeft');
@@ -143,12 +158,14 @@ function next_pageSeven() {
     $("#next_seven-two").addClass('animated zoomInRight');
     $("#next_seven-three").addClass('animated zoomInRight');
 }
-function next_pageEight(){
- $("#next_eight-one").addClass('animated zoomInLeft');
+
+function next_pageEight() {
+    $("#next_eight-one").addClass('animated zoomInLeft');
     $("#next_eight-two").addClass('animated zoomInLeft');
     $("#next_eight-three").addClass('animated zoomInLeft');
     $("#next_eight-four").addClass('animated zoomInLeft');
 }
+
 function next_pageNine() {
     $("#next_nine-one").addClass('animated zoomIn');
     $("#next_nine-two").addClass('animated zoomIn');
