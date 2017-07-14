@@ -3,15 +3,6 @@
 	    margin: 0
 	}
 
-	#twelve-three {
-	    background: url(../images/one/xiaolian.png) no-repeat transparent center center;
-	    position: fixed;
-	    top: 0.3rem;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	}
-
 	#shakTop,
 	#shakBottom {
 	    background: transparent;

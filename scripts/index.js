@@ -123,7 +123,7 @@ function next_pageNine() {
         $("#next_nine-four").addClass('animated fadeOut');
     }, 5000);
     setTimeout(function () {
-        $.fn.fullpage.moveTo(17, 0) // 去第二页 第一个横屏
+        $.fn.fullpage.moveTo(23, 0)
     }, 9000);
 }
 
@@ -406,11 +406,11 @@ function pageEleven() {
     setTimeout(function () {
         $("#girl2").animate({
             left: '0.2rem'
-        })
+        }, "slow")
         $("#boy2").animate({
             right: '0.2rem'
-        })
-    }, 2000);
+        }, "slow")
+    }, 2500);
 }
 
 function pageTwelve() {
@@ -528,19 +528,18 @@ function weixin(event) {
             if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
                 WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
                     shakeAudio.play();
-                    $('#twelve-threeshake_box').addClass('shake_box_focus');
-                    clearTimeout(shakeTimeout);
-                    var shakeTimeout = setTimeout(function () {
-                        $('#twelve-three').removeClass('shake_box_focus');
-                    }, 1000)
-                    setTimeout(function () {
-                        $.fn.fullpage.moveTo(17, 0)
-                    }, 4000);
                 });
             }
-
+            shakeAudio.play();
+            $('#twelve-threeshake_box').addClass('shake_box_focus');
+            clearTimeout(shakeTimeout);
+            var shakeTimeout = setTimeout(function () {
+                $('#twelve-three').removeClass('shake_box_focus');
+            }, 1000)
+            setTimeout(function () {
+                $.fn.fullpage.moveTo(17, 0)
+            }, 4000);
             //进入到第二部分页面
-
 
         }
 
