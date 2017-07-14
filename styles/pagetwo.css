@@ -34,9 +34,11 @@
 
 
 /* 第一页 */
+
 .section.next_pageone div {
     position: absolute;
 }
+
 .next_pageone #base_bg {
     position: absolute;
     left: 0;
@@ -228,6 +230,103 @@
 #next_three-two img {
     width: 3.26rem;
     height: 1.87rem;
+}
+
+
+/* 第4屏 */
+
+#next_pagefour-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/two/4bg.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#next_four-one {
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    text-align: center;
+    margin-left: -2.5rem;
+    animation-duration: 0.8s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_four-two {
+    position: absolute;
+    left: 50%;
+    top: 2.5rem;
+    text-align: center;
+    margin-left: -2.5rem;
+    animation-duration: 0.8s;
+    animation-delay: 1.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_four-three {
+    position: absolute;
+    left: 50%;
+    top: 5.5rem;
+    text-align: center;
+    margin-left: -2.5rem;
+    animation-duration: 0.8s;
+    animation-delay: 2.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_four-four {
+    position: absolute;
+    left: 50%;
+    top: 5.7rem;
+    text-align: center;
+    margin-left: -2.5rem;
+    animation-duration: 0.8s;
+    animation-delay: 3.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_four-five {
+    position: absolute;
+    left: 50%;
+    bottom: 0rem;
+    margin-left: -3.17rem;
+    text-align: center;
+    animation-duration: 0.8s;
+    animation-delay: 4.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_four-one img {
+    width: 4.5rem;
+    height: 1.95rem;
+}
+
+#next_four-two img {
+    width: 3.88rem;
+    height: 4.43rem;
+}
+
+#next_four-three img {
+    width: 5.47rem;
+    height: 1.19rem;
+}
+
+#next_four-four img {
+    width: 4.84rem;
+    height: 3.87rem;
+}
+
+#next_four-five img {
+    width: 6.34rem;
+    height: 5.91rem;
 }
 
 
