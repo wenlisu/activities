@@ -9,6 +9,10 @@ $(function() {
             if (index > 1) {
                 audioPlay('music');
             }
+            if (index > 13) {
+                document.getElementById('music').pause();
+                audioPlay('music2');
+            }
             if (index == 1) {
                 setTimeout(function() {
                     pageOne();
@@ -74,6 +78,9 @@ $(function() {
                 next_pageThree();
             }
 
+            if ($('.next_pagefour').hasClass('active')) {
+                next_pageFour();
+            }
             if ($('.next_pagefive').hasClass('active')) {
                 next_pageFive();
             }
@@ -203,6 +210,7 @@ function next_pageFive() {
         $("#next_five-three").addClass('animated zoomOutLeft');
         $("#next_five-four").addClass('animated zoomOutLeft');
     }, 4000);
+
     setTimeout(function() {
         $.fn.fullpage.moveTo(18, 0);
     }, 5000);
