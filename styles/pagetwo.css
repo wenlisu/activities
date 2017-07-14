@@ -33,6 +33,74 @@
 }
 
 
+/* 第一页 */
+.next_pageone #base_bg{
+	position: absolute;
+	left:0;
+	top: 0;
+	width:100%;
+	height:100%;
+	background:url('../images/two/1_bg.png') no-repeat center center;
+	background-size: 100% 100%;
+}
+#next_pageone_one {
+    width: 100%;
+    top: 50%;
+    margin-top: -2rem;
+    text-align: center;
+    /*opacity: 0;*/
+    animation-duration: 0.8s;
+    /*animation-delay: 1s;          	*/
+}
+
+#next_pageone_one img {
+    width: 80%;
+}
+
+#next_pageone_two {
+    width: 100%;
+    top: 50%;
+    margin-top: -0.4rem;
+    text-align: center;
+    animation-duration: 0.8s;
+    animation-delay: 1.2s;
+}
+
+#next_pageone_two img {
+    width: 75%;
+}
+
+#next_pageone_three {
+    width: 100%;
+    top: 50%;
+    margin-left: 0.4rem;
+    margin-top: 1.0rem;
+    text-align: center;
+    animation-duration: 0.4s;
+    animation-delay: 2.2s;
+}
+
+#next_pageone_three img {
+    width: 70%;
+}
+
+#next_pageone_four {
+    width: 100%;
+    top: 50%;
+    margin-left: -0.4rem;
+    margin-top: -1.0rem;
+    text-align: center;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+#next_pageone_four img {
+    width: 100%;
+}
+
+
 /* 第10、11屏 */
 
 #next_pageten-bg {
@@ -195,7 +263,7 @@
     background: #f4f4f4;
     font-size: 0.36rem;
     font-family: "微软雅黑";
-    height:4.9rem;
+    height: 4.9rem;
 }
 
 .top_p {
@@ -210,7 +278,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height:0.7rem;
+    height: 0.7rem;
 }
 
 .ipt {
@@ -426,14 +494,159 @@
 }
 
 
-/* 第7屏 */
+/* 第8屏 */
 
-#next_pageSeven-bg {
+#next_pageeight-bg {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/two/6_bg.png') no-repeat center center;
+    background: url('../images/two/8bg.png') no-repeat center center;
     background-size: 100% 100%;
+}
+
+#next_eight-one {
+    position: absolute;
+    left: 50%;
+    top: 1.3rem;
+    margin-left: -2.6rem;
+    text-align: center;
+    animation-duration: 1s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_eight-two {
+    position: absolute;
+    left: 50%;
+    top: 1.8rem;
+    margin-left: -3rem;
+    text-align: center;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_eight-three {
+    position: absolute;
+    left: 50%;
+    top: 4.3rem;
+    margin-left: -3.2rem;
+    text-align: center;
+    animation-duration: 1s;
+    animation-delay: 3.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_eight-four {
+    position: absolute;
+    left: 50%;
+    top: 6.0rem;
+    text-align: center;
+    margin-left: -2.5rem;
+    animation-duration: 1s;
+    animation-delay: 4.2s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_eight-one img {
+    width: 2.55rem;
+    height: 1.96rem;
+}
+
+#next_eight-two img {
+    width: 4.05rem;
+    height: 1.82rem;
+}
+
+#next_eight-three img {
+    width: 6.4rem;
+    height: 1.98rem;
+}
+
+#next_eight-four img {
+    width: 5.42rem;
+    height: 3.12rem;
+}
+
+
+/* 第7屏 */
+
+#next_pageseven-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/two/7bg.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#next_seven-one {
+    position: absolute;
+    left: 50%;
+    top: 2.3rem;
+    margin-left: -1.6rem;
+    text-align: center;
+    animation-duration: 1s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_seven-two {
+    position: absolute;
+    left: 50%;
+    top: 4.8rem;
+    margin-left: -1rem;
+    text-align: center;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_seven-three {
+    position: absolute;
+    left: 50%;
+    top: 5.8rem;
+    margin-left: -1.5rem;
+    text-align: center;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_seven-four {
+    position: absolute;
+    left: 0%;
+    top: 0rem;
+    width: 100%;
+    text-align: center;
+    /* opacity: 0;
+	animation-duration: 4s; */
+}
+
+#next_seven-one img {
+    width: 3.28rem;
+    height: 1.97rem;
+}
+
+#next_seven-two img {
+    width: 2.76rem;
+    height: 1.29rem;
+}
+
+#next_seven-three img {
+    width: 4.69rem;
+    height: 2.84rem;
+}
+
+#next_seven-three img {
+    width: 4.69rem;
+    height: 2.84rem;
 }
