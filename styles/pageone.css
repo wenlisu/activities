@@ -315,35 +315,35 @@ body {
 #max-love {
     position: absolute;
     left: 50%;
-    bottom: 5.3rem;
+    bottom: 5.1rem;
     margin-left: -1.7rem;
     opacity: 0;
     animation-duration: 1s;
 }
 
 #max-love img {
-    width: 4.24rem;
-    height: 3.52rem;
+    width: 4rem;
+    height: auto;
 }
 
 #max-love-font {
     position: absolute;
     left: 50%;
-    bottom: 5.3rem;
+    bottom: 5.1rem;
     margin-left: -1.7rem;
     opacity: 0;
     animation-duration: 1s;
 }
 
 #max-love-font img {
-    width: 4.24rem;
-    height: 3.52rem;
+    width: 4rem;
+    height: auto;
 }
 
 #min-love {
     position: absolute;
     left: 50%;
-    bottom: 4.8rem;
+    bottom: 4.6rem;
     margin-left: -0.7rem;
     opacity: 0;
     animation-duration: 1.5s;
@@ -527,7 +527,7 @@ body {
 #seven-one {
     position: absolute;
     left: 0;
-    bottom: 8rem;
+    bottom: 7.8rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -537,7 +537,7 @@ body {
 #seven-two {
     position: absolute;
     left: 0;
-    bottom: 6.5rem;
+    bottom: 6.4rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -547,7 +547,7 @@ body {
 #seven-three {
     position: absolute;
     left: -0.48rem;
-    bottom: 4.9rem;
+    bottom: 4.8rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -557,7 +557,7 @@ body {
 #seven-four {
     position: absolute;
     left: 1rem;
-    bottom: 5.5rem;
+    bottom: 5.4rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -1006,7 +1006,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.885rem;
-    margin-top:-3.1rem;
+    margin-top:-3.2rem;
     animation-delay: 3s;
     animation-duration: 3s;
     
@@ -1023,7 +1023,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.78rem;
-    margin-top: -2.3rem;
+    margin-top: -2.55rem;
     animation-delay: 4s;
     animation-duration: 3s;
     
@@ -1040,7 +1040,7 @@ body {
     left: 50%;
     top:50%;
     margin-left: -2.2rem;
-    margin-top: -1.3rem;
+    margin-top: -1.6rem;
     animation-delay: 5s;
     animation-duration: 3s;
     
@@ -1056,7 +1056,7 @@ body {
     position: absolute;
     left: 50%;
     top:50%;
-    margin-top:-0.6rem;
+    margin-top:-0.95rem;
     margin-left: -1.34rem;
     animation-delay: 6s;
     animation-duration: 3s;
@@ -1073,7 +1073,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.545rem;
-    margin-top:0.5rem;
+    margin-top:0.15rem;
     animation-delay: 7s;
     animation-duration: 3s;
     
@@ -1090,7 +1090,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.23rem;
-    margin-top: 1.2rem;
+    margin-top: 0.9rem;
     animation-delay: 8s;
     animation-duration: 3s;
     
@@ -1107,7 +1107,7 @@ body {
     left: 50%;
     top:50%;
     margin-left: -1.795rem;
-    margin-top:1.9rem;
+    margin-top:1.6rem;
     animation-delay: 9s;
     animation-duration: 3s;
     
@@ -1124,7 +1124,7 @@ body {
     left: 50%;
     top:50%;
     margin-left: -1.6rem;
-    margin-top:2.9rem;
+    margin-top:2.6rem;
     animation-delay: 10s;
     animation-duration: 3s;
     
