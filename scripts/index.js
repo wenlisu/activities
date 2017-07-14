@@ -3,7 +3,7 @@ $(function () {
         pageOne();
     }, 50);
     $('#fullpage').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'page26', 'page27'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
         afterLoad: function (link, index) {
             if (index == 1) {
@@ -55,14 +55,15 @@ $(function () {
                     pageTwelve();
                 }, 50);
                 weixinOpen();
-            } else if (index == 18) {
-                // setTimeout(function () {
-                pageTwentySix();
-                // }, 0);
-            }else if (index == 19) {
-                // setTimeout(function () {
-                pageTwentySeven();
-                // }, 0);
+            }
+            if ($('.next_pagesix').hasClass('active')) {
+                next_pageSix();
+            }
+            if ($('.next_pagenine').hasClass('active')) {
+                next_pageNine();
+            }
+            if ($('.next_pageten').hasClass('active')) {
+                next_pageTen();
             }
 
         },
@@ -74,16 +75,43 @@ $(function () {
 var eye_timer, changeSrc = './images/one/6_people.png',
     defaultSrc = './images/one/7_people.png';
 
-function pageTwentySix() {
-    $("#next_six-one").addClass('animated zoomIn');
-    $("#next_six-two").addClass('animated zoomIn');
-    $("#next_six-three").addClass('animated zoomIn');
-    $("#next_six-three").addClass('animated zoomIn');
-    $("#next_six-four").addClass('animated zoomIn');
-    $("#next_six-five").addClass('animated zoomIn');
+function next_pageSix() {
+    $("#next_six-one").addClass('animated zoomInLeft');
+    $("#next_six-two").addClass('animated zoomInLeft');
+    $("#next_six-three").addClass('animated zoomInLeft');
+    $("#next_six-three").addClass('animated zoomInLeft');
+    $("#next_six-four").addClass('animated zoomInLeft');
+    $("#next_six-five").addClass('animated zoomInRight');
 }
 
-
+function next_pageNine() {
+    $("#next_nine-one").addClass('animated zoomIn');
+    $("#next_nine-two").addClass('animated zoomIn');
+    $("#next_nine-three").addClass('animated zoomIn');
+    $("#next_nine-four").addClass('animated fadeIn');
+    setTimeout(function () {
+        $("#next_nine-one").addClass('animated zoomOutLeft');
+        $("#next_nine-two").addClass('animated zoomOutRight');
+        $("#next_nine-three").addClass('animated zoomOutUp');
+        $("#next_nine-four").addClass('animated fadeOut');
+    }, 5000);
+  setTimeout(function () {
+        $.fn.fullpage.moveTo(17,0) // 去第二页 第一个横屏
+    }, 9000);
+}
+function next_pageTen(){
+    $("#next_ten-two").addClass('animated fadeIn');
+    $("#next_ten-one").addClass('animated zoomIn');
+    $("#next_ten-four").addClass('animated fadeInDown');
+    $("#next_ten-three").addClass('animated fadeIn');
+    setTimeout(function () {
+    $("#next_ten-two").animate({top:'1.5rem'});
+    $("#next_ten-one").animate({top:'-0.5rem'});
+    $("#next_ten-four").animate({top:'-1.3rem'});
+    $('#next_ten-five').css('display','block');
+    $('#next_ten-five').animate({bottom:'0'})
+     }, 6000);
+}
 
 function pageOne() {
     setTimeout(function () {
