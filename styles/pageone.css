@@ -287,7 +287,7 @@ body {
 #girl {
     position: absolute;
     left: 50%;
-    margin-left:-2.9rem;
+    margin-left: -2.9rem;
     bottom: -0.22rem;
     opacity: 0;
     animation-duration: 2s;
@@ -300,9 +300,9 @@ body {
 
 #boy {
     position: absolute;
-    left:50%;
+    left: 50%;
     bottom: -0.22rem;
-    margin-left:-0.25rem;
+    margin-left: -0.25rem;
     opacity: 0;
     animation-duration: 2s;
 }
@@ -395,7 +395,7 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top:-3.4rem;
+    margin-top: -3.4rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -410,8 +410,8 @@ body {
 #six-two {
     position: absolute;
     left: 0;
-    top:50%;
-    margin-top:-3rem;
+    top: 50%;
+    margin-top: -3rem;
     opacity: 0;
     animation-duration: 4s;
 }
@@ -425,7 +425,7 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top:-2.2rem;
+    margin-top: -2.2rem;
     width: 100%;
     opacity: 0;
     text-align: center;
@@ -440,7 +440,7 @@ body {
 #six-four {
     position: absolute;
     right: 0;
-    top:50%;
+    top: 50%;
     margin-top: -3.3rem;
     opacity: 0;
     animation-duration: 4s;
@@ -859,7 +859,7 @@ body {
 #twelve-three img {
     width: 2.22rem;
     height: 1.88rem;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #twelve-five img {
@@ -876,7 +876,7 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top:-3.3rem;
+    margin-top: -3.3rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -887,7 +887,7 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top:-2.3rem;
+    margin-top: -2.3rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -897,9 +897,9 @@ body {
 #twelve-three {
     position: absolute;
     left: 0rem;
-    top: 0rem;
+    top: 0.3rem;
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
     align-items: center;
     opacity: 0;
@@ -910,7 +910,7 @@ body {
     position: absolute;
     left: 0rem;
     top: 50%;
-    margin-top:1.3rem;
+    margin-top: 1.3rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -921,7 +921,7 @@ body {
     position: absolute;
     left: 0rem;
     top: 50%;
-    margin-top:2.3rem;
+    margin-top: 2.3rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -992,7 +992,6 @@ body {
     margin-top: -3.8rem;
     animation-delay: 1s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-one img {
@@ -1009,12 +1008,11 @@ body {
     margin-top:-3.2rem;
     animation-delay: 3s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-two img {
     width: 1.77rem;
-    height:0.43rem;
+    height: 0.43rem;
 }
 
 .pageone #one-three {
@@ -1026,37 +1024,40 @@ body {
     margin-top: -2.55rem;
     animation-delay: 4s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-three img {
     width: 3.58rem;
-    height:0.43rem;
+    height: 0.43rem;
 }
 
 .pageone #one-four {
     opacity: 0;
     position: absolute;
     left: 50%;
-    top:50%;
+    top: 50%;
     margin-left: -2.2rem;
     margin-top: -1.6rem;
     animation-delay: 5s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-four img {
     width: 4.4rem;
-    height:0.75rem;
+    height: 0.75rem;
 }
 
 .pageone #one-six {
     opacity: 0;
     position: absolute;
     left: 50%;
+<<<<<<< HEAD
     top:50%;
     margin-top:-0.95rem;
+=======
+    top: 50%;
+    margin-top: -0.6rem;
+>>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     margin-left: -1.34rem;
     animation-delay: 6s;
     animation-duration: 3s;
@@ -1064,7 +1065,7 @@ body {
 
 .pageone #one-six img {
     width: 2.68rem;
-    height:0.43rem;
+    height: 0.43rem;
 }
 
 .pageone #one-seven {
@@ -1073,15 +1074,18 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.545rem;
+<<<<<<< HEAD
     margin-top:0.15rem;
+=======
+    margin-top: 0.5rem;
+>>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     animation-delay: 7s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-seven img {
     width: 1.09rem;
-    height:0.76rem;
+    height: 0.76rem;
 }
 
 .pageone #one-eighty {
@@ -1093,46 +1097,51 @@ body {
     margin-top: 0.9rem;
     animation-delay: 8s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-eighty img {
     width: 2.46rem;
-    height:0.44rem;
+    height: 0.44rem;
 }
 
 .pageone #one-nine {
     opacity: 0;
     position: absolute;
     left: 50%;
-    top:50%;
+    top: 50%;
     margin-left: -1.795rem;
+<<<<<<< HEAD
     margin-top:1.6rem;
+=======
+    margin-top: 1.9rem;
+>>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     animation-delay: 9s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-nine img {
     width: 3.59rem;
-    height:0.43rem;
+    height: 0.43rem;
 }
 
 .pageone #one-ten {
     opacity: 0;
     position: absolute;
     left: 50%;
-    top:50%;
+    top: 50%;
     margin-left: -1.6rem;
+<<<<<<< HEAD
     margin-top:2.6rem;
+=======
+    margin-top: 2.9rem;
+>>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     animation-delay: 10s;
     animation-duration: 3s;
-    
 }
 
 .pageone #one-ten img {
     width: 3.20rem;
-    height:0.73rem;
+    height: 0.73rem;
 }
 
 .pagetow #two-bg {
@@ -1245,8 +1254,8 @@ body {
 }
 
 .pageeight #eight-one img {
-    width:5.97rem;
-    height:5.26rem;
+    width: 5.97rem;
+    height: 5.26rem;
     position: relative;
     height: auto;
     margin: 0 auto;
@@ -1438,7 +1447,12 @@ body {
     height: auto;
 }
 
-.pegeeleven #girl2.animated,
-.pegeeleven #boy2.animated {
+.pegeeleven #girl2 {
     opacity: 1;
+    left: -3.8rem;
+}
+
+.pegeeleven #boy2 {
+    opacity: 1;    
+    right: -3.8rem;
 }
