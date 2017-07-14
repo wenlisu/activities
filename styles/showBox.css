@@ -1,0 +1,164 @@
+	* {
+	    padding: 0;
+	    margin: 0
+	}
+
+	#twelve-three {
+	    background: url(../images/one/xiaolian.png) no-repeat #1e2020 center center;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	#shakTop,
+	#shakBottom {
+	    background: #282c2d;
+	    position: absolute;
+	    left: 0;
+	    width: 100%;
+	    height: 50%;
+	}
+
+	#shakTop {
+	    top: 0;
+	}
+
+	#shakBottom {
+	    bottom: 0;
+	}
+
+	#shakTop span,
+	#shakBottom span {
+	    background: url(../images/one/1203.png) no-repeat;
+	    background-size: 100% auto;
+	    position: absolute;
+	    left: 50%;
+	    width: 40%;
+	    height: 70px;
+	    margin: 0 0 0 -67px;
+	}
+
+	#shakTop span {
+	    bottom: 0;
+	}
+
+	#shakBottom span {
+	    background-position: 0 -69px;
+	    top: 0;
+	}
+
+	.shake_box_focus #shakTop {
+	    animation: shakTop 1s 1 linear;
+	    -moz-animation: shakTop 1s 1 linear;
+	    -webkit-animation: shakTop 1s 1 linear;
+	    -ms-animation: shakTop 1s 1 linear;
+	    -o-animation: shakTop 1s 1 linear;
+	}
+
+	.shake_box_focus #shakBottom {
+	    animation: shakBottom 1s 1 linear;
+	    -moz-animation: shakBottom 1s 1 linear;
+	    -webkit-animation: shakBottom 1s 1 linear;
+	    -ms-animation: shakBottom 1s 1 linear;
+	    -o-animation: shakBottom 1s 1 linear;
+	}
+	/* 向上拉动画效果 */
+
+	@-webkit-keyframes shakTop {
+	    0% {
+	        top: 0;
+	    }
+	    50% {
+	        top: -200px;
+	    }
+	    100% {
+	        top: 0;
+	    }
+	}
+
+	@-moz-keyframes shakTop {
+	    0% {
+	        top: 0;
+	    }
+	    50% {
+	        top: -200px;
+	    }
+	    100% {
+	        top: 0;
+	    }
+	}
+
+	@-ms-keyframes shakTop {
+	    0% {
+	        top: 0;
+	    }
+	    50% {
+	        top: -200px;
+	    }
+	    100% {
+	        top: 0;
+	    }
+	}
+
+	@-o-keyframes shakTop {
+	    0% {
+	        top: 0;
+	    }
+	    50% {
+	        top: -200px;
+	    }
+	    100% {
+	        top: 0;
+	    }
+	}
+	/* 向下拉动画效果 */
+
+	@-webkit-keyframes shakBottom {
+	    0% {
+	        bottom: 0;
+	    }
+	    50% {
+	        bottom: -200px;
+	    }
+	    100% {
+	        bottom: 0;
+	    }
+	}
+
+	@-moz-keyframes shakBottom {
+	    0% {
+	        bottom: 0;
+	    }
+	    50% {
+	        bottom: -200px;
+	    }
+	    100% {
+	        bottom: 0;
+	    }
+	}
+
+	@-ms-keyframes shakBottom {
+	    0% {
+	        bottom: 0;
+	    }
+	    50% {
+	        bottom: -200px;
+	    }
+	    100% {
+	        bottom: 0;
+	    }
+	}
+
+	@-o-keyframes shakBottom {
+	    0% {
+	        bottom: 0;
+	    }
+	    50% {
+	        bottom: -200px;
+	    }
+	    100% {
+	        bottom: 0;
+	    }
+	}

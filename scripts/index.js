@@ -70,12 +70,20 @@ $(function () {
         onLeave: function (index) {
             $('.section div div').removeClass();
             //二部分第10页
-            if(index == 23){
-            $("#next_ten-two").animate({top:'2.8rem'});
-            $("#next_ten-one").animate({top:'0.8rem'});
-            $("#next_ten-four").animate({top:'0rem'});
-            $('#next_ten-five').css('display','none');
-            $('#next_ten-five').animate({bottom:'-4.9rem'})
+            if (index == 23) {
+                $("#next_ten-two").animate({
+                    top: '2.8rem'
+                });
+                $("#next_ten-one").animate({
+                    top: '0.8rem'
+                });
+                $("#next_ten-four").animate({
+                    top: '0rem'
+                });
+                $('#next_ten-five').css('display', 'none');
+                $('#next_ten-five').animate({
+                    bottom: '-4.9rem'
+                })
             }
         }
     });
@@ -103,22 +111,31 @@ function next_pageNine() {
         $("#next_nine-three").addClass('animated zoomOutUp');
         $("#next_nine-four").addClass('animated fadeOut');
     }, 5000);
-  setTimeout(function () {
-        $.fn.fullpage.moveTo(17,0) // 去第二页 第一个横屏
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(17, 0) // 去第二页 第一个横屏
     }, 9000);
 }
-function next_pageTen(){
+
+function next_pageTen() {
     $("#next_ten-two").addClass('animated fadeIn');
     $("#next_ten-one").addClass('animated zoomIn');
     $("#next_ten-four").addClass('animated fadeInDown');
     $("#next_ten-three").addClass('animated fadeIn');
     setTimeout(function () {
-        $("#next_ten-two").animate({top:'1.5rem'});
-        $("#next_ten-one").animate({top:'-0.5rem'});
-        $("#next_ten-four").animate({top:'-1.3rem'});
-        $('#next_ten-five').css('display','block');
-        $('#next_ten-five').animate({bottom:'0'})
-     }, 6000);
+        $("#next_ten-two").animate({
+            top: '1.5rem'
+        });
+        $("#next_ten-one").animate({
+            top: '-0.5rem'
+        });
+        $("#next_ten-four").animate({
+            top: '-1.3rem'
+        });
+        $('#next_ten-five').css('display', 'block');
+        $('#next_ten-five').animate({
+            bottom: '0'
+        })
+    }, 6000);
 }
 
 function pageOne() {
@@ -499,13 +516,16 @@ function weixin(event) {
                     shakeAudio.play();
                 });
             }
-            //播放动画
-            $('.shake_box').addClass('shake_box_focus');
+            $('#twelve-threeshake_box').addClass('shake_box_focus');
             clearTimeout(shakeTimeout);
             var shakeTimeout = setTimeout(function () {
-                $('.shake_box').removeClass('shake_box_focus');
+                $('#twelve-three').removeClass('shake_box_focus');
             }, 1000)
+            //进入到第二部分页面
 
+            setTimeout(function () {
+                $.fn.fullpage.moveTo(17, 0) // 去第二页 第一个横屏
+            }, 1000);
         }
 
         lastShakeX = curShakeX;
