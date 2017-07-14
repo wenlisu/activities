@@ -669,7 +669,7 @@ body {
 #ten-one {
     position: absolute;
     left: 0;
-    bottom: 8.15rem;
+    bottom: 7.9rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -679,7 +679,7 @@ body {
 #ten-two {
     position: absolute;
     left: 0;
-    bottom: 7.3rem;
+    bottom: 7.2rem;
     width: 100%;
     text-align: center;
     opacity: 0;
@@ -1051,13 +1051,8 @@ body {
     opacity: 0;
     position: absolute;
     left: 50%;
-<<<<<<< HEAD
     top:50%;
     margin-top:-0.95rem;
-=======
-    top: 50%;
-    margin-top: -0.6rem;
->>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     margin-left: -1.34rem;
     animation-delay: 6s;
     animation-duration: 3s;
@@ -1074,11 +1069,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.545rem;
-<<<<<<< HEAD
     margin-top:0.15rem;
-=======
-    margin-top: 0.5rem;
->>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     animation-delay: 7s;
     animation-duration: 3s;
 }
@@ -1110,11 +1101,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.795rem;
-<<<<<<< HEAD
     margin-top:1.6rem;
-=======
-    margin-top: 1.9rem;
->>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     animation-delay: 9s;
     animation-duration: 3s;
 }
@@ -1130,11 +1117,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.6rem;
-<<<<<<< HEAD
     margin-top:2.6rem;
-=======
-    margin-top: 2.9rem;
->>>>>>> f10aca83151c9919008e5f03fe4ec7c316cb1697
     animation-delay: 10s;
     animation-duration: 3s;
 }
@@ -1264,22 +1247,22 @@ body {
 
 .pageeight #eight-two {
     opacity: 0;
-    bottom: 8.7rem;
+    bottom: 8.5rem;
 }
 
 .pageeight #eight-three {
     opacity: 0;
-    bottom: 7.94rem;
+    bottom: 7.74rem;
 }
 
 .pageeight #eight-four {
     opacity: 0;
-    bottom: 7.12rem;
+    bottom: 6.92rem;
 }
 
 .pageeight #eight-five {
     opacity: 0;
-    bottom: 6.38rem;
+    bottom: 6.18rem;
 }
 
 .pageeight #eight-six img,
@@ -1295,7 +1278,7 @@ body {
 
 .pageeight #eight-six {
     opacity: 0;
-    bottom: 7.97rem;
+    bottom: 7.77rem;
     justify-content: flex-start;
 }
 
@@ -1305,7 +1288,7 @@ body {
 
 .pageeight #eight-seven {
     opacity: 0;
-    bottom: 8.9rem;
+    bottom: 8.7rem;
     justify-content: flex-end;
 }
 
@@ -1315,7 +1298,7 @@ body {
 
 .pageeight #eight-eight {
     opacity: 0;
-    bottom: 5.52rem;
+    bottom: 5.32rem;
     justify-content: flex-start;
 }
 
@@ -1325,7 +1308,7 @@ body {
 
 .pageeight #eight-nine {
     opacity: 0;
-    bottom: 5.85rem;
+    bottom: 5.65rem;
     justify-content: flex-end;
 }
 
@@ -1335,7 +1318,7 @@ body {
 
 .pageeight #eight-ten {
     opacity: 0;
-    bottom: 5.60rem;
+    bottom: 5.40rem;
     justify-content: flex-start;
 }
 
@@ -1345,7 +1328,7 @@ body {
 
 .pageeight #eight-eleven {
     opacity: 0;
-    bottom: 8rem;
+    bottom: 7.8rem;
     justify-content: flex-end;
 }
 
@@ -1355,7 +1338,7 @@ body {
 
 .pageeight #eight-twelve {
     opacity: 0;
-    bottom: 5.4rem;
+    bottom: 5.2rem;
 }
 
 .pageeight #eight-twelve img {
