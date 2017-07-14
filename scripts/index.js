@@ -592,7 +592,7 @@ function weixin(event) {
                 $('#twelve-three').removeClass('shake_box_focus');
             }, 1000)
             setTimeout(function () {
-                $.fn.fullpage.moveTo(17, 0)
+                $.fn.fullpage.moveTo(13, 0)
             }, 4000);
             //进入到第二部分页面
 
