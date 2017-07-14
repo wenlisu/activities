@@ -58,11 +58,11 @@ $(function () {
                     pageTwelve();
                 }, 50);
                 weixinOpen();
-
                 // 第一部分结束后禁止手动进入下一页
                 $.fn.fullpage.setAllowScrolling(false);
             }
             if ($('.next_pageone').hasClass('active')) {
+                window.removeEventListener('devicemotion', weixin, false);
                 setTimeout(function () {
                     next_pageone();
                 }, 50);
@@ -131,7 +131,9 @@ function next_pageone() {
     setTimeout(function () {
         $("#next_pageone_four").addClass('animated flash');
     }, 3000);
-
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(14, 0);
+    }, 8500);
 
 }
 
@@ -140,23 +142,70 @@ function next_pageTwo() {
     $("#next_two-two").addClass('animated zoomIn');
     $("#next_two-three").addClass('animated zoomIn');
     $("#next_two-four").addClass('animated zoomIn');
+    setTimeout(function () {
+        $("#next_two-one").addClass('animated zoomOut');
+        $("#next_two-two").addClass('animated zoomOut');
+        $("#next_two-three").addClass('animated zoomOut');
+    }, 5000);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(15, 0);
+    }, 8500);
 }
-function next_pageThree(){
+
+function next_pageThree() {
     $("#next_three-one").addClass('animated zoomIn');
     $("#next_three-two").addClass('animated zoomIn');
+    setTimeout(function () {
+        $("#next_three-one").addClass('animated zoomOut');
+        $("#next_three-two").addClass('animated zoomOut');
+    }, 3500);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(16, 0);
+    }, 7000);
 }
+
+function next_pageFour() {
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(17, 0);
+    }, 10000);
+}
+
+function next_pageFive() {
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(18, 0);
+    }, 10000);
+}
+
 function next_pageSix() {
     $("#next_six-one").addClass('animated zoomInLeft');
     $("#next_six-two").addClass('animated zoomInLeft');
     $("#next_six-three").addClass('animated zoomInLeft');
     $("#next_six-four").addClass('animated zoomInLeft');
     $("#next_six-five").addClass('animated zoomInRight');
+    setTimeout(function () {
+        $("#next_six-one").addClass('animated zoomOutLeft');
+        $("#next_six-two").addClass('animated zoomOutLeft');
+        $("#next_six-three").addClass('animated zoomOutLeft');
+        $("#next_six-four").addClass('animated zoomOutLeft');
+        $("#next_six-five").addClass('animated zoomOut');
+    }, 7000);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(19, 0);
+    }, 13000);
 }
 
 function next_pageSeven() {
     $("#next_seven-one").addClass('animated zoomInRight');
     $("#next_seven-two").addClass('animated zoomInRight');
     $("#next_seven-three").addClass('animated zoomInRight');
+    setTimeout(function () {
+        $("#next_seven-one").addClass('animated zoomOutRight');
+        $("#next_seven-two").addClass('animated zoomOutRight');
+        $("#next_seven-three").addClass('animated zoomOutRight');
+    }, 5000);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(20, 0);
+    }, 8500);
 }
 
 function next_pageEight() {
@@ -164,6 +213,15 @@ function next_pageEight() {
     $("#next_eight-two").addClass('animated zoomInLeft');
     $("#next_eight-three").addClass('animated zoomInLeft');
     $("#next_eight-four").addClass('animated zoomInLeft');
+    setTimeout(function () {
+        $("#next_eight-one").addClass('animated zoomOutLeft');
+        $("#next_eight-two").addClass('animated zoomOutLeft');
+        $("#next_eight-three").addClass('animated zoomOutLeft');
+        $("#next_eight-four").addClass('animated zoomOutLeft');
+    }, 6000);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(21, 0);
+    }, 11000);
 }
 
 function next_pageNine() {
@@ -592,9 +650,8 @@ function weixin(event) {
                 $('#twelve-three').removeClass('shake_box_focus');
             }, 1000)
             setTimeout(function () {
-                $.fn.fullpage.moveTo(13, 0)
+                $.fn.fullpage.moveTo(13, 0);
             }, 4000);
-            //进入到第二部分页面
 
         }
 
