@@ -253,12 +253,12 @@ function pageSix() {
     setTimeout(function () {
         $("#six-three").addClass('animated fadeIn')
         $("#six-four").addClass('animated fadeIn')
-    }, 3500);
+    }, 2800);
     setTimeout(function () {
         eye_timer = setInterval(function () {
             eye("#openSixEye", changeSrc)
         }, 50);
-    }, 2000);
+    }, 1800);
 }
 
 function pegeSeven() {
