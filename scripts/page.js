@@ -7,6 +7,7 @@ $(function() {
         anchors: ['next_pageone', 'next_pagetwo', 'next_pagethree', 'next_pagefour', 'next_pagefive', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
         afterLoad: function(link, index) {
+            $.fn.fullpage.setAllowScrolling(false);
             if ($('.next_pageone').hasClass('active')) {
                 window.removeEventListener('devicemotion', weixin, false);
                 setTimeout(function() {
@@ -44,6 +45,7 @@ $(function() {
 
         },
         onLeave: function(index) {
+            $('.section div div').removeClass();
             //二部分第10页
             if (index == 10) {
                 $("#next_ten-two").animate({
