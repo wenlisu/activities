@@ -371,7 +371,7 @@ function pageEleven() {
     }, 2500);
    setTimeout(function () {
         $.fn.fullpage.moveTo(12, 0);
-    }, 4000)
+    }, 4500)
 }
 
 function pageTwelve() {
