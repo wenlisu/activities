@@ -128,7 +128,7 @@ function next_pageThree() {
     setTimeout(function() {
         $("#next_three-two").addClass('animated zoomOut');
     }, 2600);
-    setTimeout(function () {
+    setTimeout(function() {
         $("#next_pagethree-bg").addClass('animated zoomOut');
     }, 4000);
     setTimeout(function() {
