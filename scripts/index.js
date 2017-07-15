@@ -466,10 +466,10 @@ function weixin(event) {
             var shakeTimeout = setTimeout(function() {
                 $('#twelve-three').removeClass('shake_box_focus');
             }, 1000)
-            window.location.href = "./page.html";
-
+            setTimeout(function() {
+                window.location.href = "./page.html";
+            }, 3000);
         }
-
         lastShakeX = curShakeX;
         lastShakeY = curShakeY;
         lastShakeZ = curShakeZ;
