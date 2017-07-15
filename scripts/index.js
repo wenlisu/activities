@@ -6,6 +6,8 @@ $(function () {
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12'],
         lazyLoading: true,
         afterLoad: function (link, index) {
+            // 禁止手动进入下一页
+            $.fn.fullpage.setAllowScrolling(false);
             if (index > 1) {
                 audioPlay('music');
             }
@@ -58,8 +60,7 @@ $(function () {
                     pageTwelve();
                 }, 50);
                 weixinOpen();
-                // 第一部分结束后禁止手动进入下一页
-                $.fn.fullpage.setAllowScrolling(false);
+
             }
         },
         onLeave: function (index) {
@@ -109,6 +110,9 @@ function pageOne() {
     setTimeout(function () {
         $("#one-ten").addClass('animated fadeIn')
     }, 4500);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(2, 0);
+    }, 16000);
 }
 
 function pageTow() {
@@ -125,6 +129,9 @@ function pageTow() {
     setTimeout(function () {
         $("#two-four").addClass('animated fadeIn')
     }, 1500);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(3, 0);
+    }, 4000);
 }
 
 function pageThree() {
@@ -142,6 +149,9 @@ function pageThree() {
     setTimeout(function () {
         $("#three-four").addClass('animated bounceIn')
     }, 1500);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(4, 0);
+    }, 6000);
 }
 
 function pageFour() {
@@ -149,6 +159,9 @@ function pageFour() {
     setTimeout(function () {
         $("#four-one").addClass('animated fadeIn')
     }, 100);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(5, 0);
+    }, 2500);
 }
 
 function pageFive() {
@@ -167,6 +180,9 @@ function pageFive() {
     setTimeout(function () {
         $("#max-love-font").addClass('animated fadeIn')
     }, 1500);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(6, 0);
+    }, 5000);
 }
 
 function pageSix() {
@@ -188,6 +204,9 @@ function pageSix() {
             eye("#openSixEye", changeSrc)
         }, 50);
     }, 1800);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(7, 0);
+    }, 5500)
 }
 
 function pegeSeven() {
@@ -223,6 +242,9 @@ function pegeSeven() {
             eye("#openSevenEye", changeSrc)
         }, 50);
     }, 1500);
+    setTimeout(function () {
+        $.fn.fullpage.moveTo(8, 0);
+    }, 8000)
 }
 
 function pageEight() {
@@ -268,7 +290,9 @@ function pageEight() {
             eye("#openEightEye", changeSrc)
         }, 50);
     }, 2000);
-
+   setTimeout(function () {
+        $.fn.fullpage.moveTo(9, 0);
+    }, 8000)
 }
 
 function pageNine() {
@@ -288,6 +312,9 @@ function pageNine() {
     setTimeout(function () {
         $("#nine-five").addClass('animated fadeIn')
     }, 2000);
+   setTimeout(function () {
+        $.fn.fullpage.moveTo(10, 0);
+    }, 4000)
 }
 
 function pageTen() {
@@ -319,7 +346,9 @@ function pageTen() {
     setTimeout(function () {
         $("#ten-nine").addClass('animated fadeIn')
     }, 4500);
-
+   setTimeout(function () {
+        $.fn.fullpage.moveTo(11, 0)
+    }, 8000)
 }
 
 function pageEleven() {
@@ -340,6 +369,9 @@ function pageEleven() {
             right: '0.2rem'
         }, "slow")
     }, 2500);
+   setTimeout(function () {
+        $.fn.fullpage.moveTo(12, 0);
+    }, 4500)
 }
 
 function pageTwelve() {
