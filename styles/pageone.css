@@ -1373,14 +1373,13 @@ body {
     bottom: 0;
     opacity: 0;
 }
-
 .pagenine #nineGirl img {
     position: absolute;
     left: 0.3rem;
     bottom: 0;
     animation-duration: 3s;
-    width: 2.71rem;
-    height: 4.72rem;
+    width: 2.5rem;
+    height:4.37rem;
 }
 
 .pagenine #nineBoy {

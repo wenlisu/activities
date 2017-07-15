@@ -119,17 +119,21 @@ function next_pageTwo() {
 }
 
 function next_pageThree() {
+    $("#next_pagethree-bg").addClass('animated zoomIn opacity-class');
     $("#next_three-one").addClass('animated zoomIn opacity-class');
     $("#next_three-two").addClass('animated zoomIn opacity-class');
     setTimeout(function() {
         $("#next_three-one").addClass('animated zoomOut');
-    }, 3500);
+    }, 3200);
     setTimeout(function() {
         $("#next_three-two").addClass('animated zoomOut');
-    }, 2500);
+    }, 2600);
+    setTimeout(function() {
+        $("#next_pagethree-bg").addClass('animated zoomOut');
+    }, 4000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(4, 0);
-    }, 4000);
+    }, 4500);
 }
 
 function next_pageFour() {
@@ -161,7 +165,7 @@ function next_pageFour() {
     //     $("#next_four-five").addClass('animated zoomOut');
     // }, 2000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(5, 0);
+        // $.fn.fullpage.moveTo(5, 0);
     }, 6400);
 }
 
@@ -274,8 +278,9 @@ function next_pageNine() {
         $("#next_nine-four").addClass('animated zoomOutDown');
     }, 4000);
     setTimeout(function() {
+
         $.fn.fullpage.moveTo(10, 0);
-    }, 6000);
+    }, 7000);
 }
 
 function next_pageTen() {

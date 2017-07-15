@@ -130,7 +130,7 @@
     position: absolute;
     left: 50%;
     top: 3.2rem;
-    margin-left: -1rem;
+    margin-left: -0.7rem;
     text-align: center;
     animation-duration: 0.8s;
     opacity: 0;
@@ -196,14 +196,30 @@
 
 /* 第3屏 */
 
+#next_pagethree-bg-one {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#000;
+}
 #next_pagethree-bg {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/two/3bg.png') no-repeat center center;
-    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    background: #000;
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
+}
+#next_pagethree-bg img{
+    margin:0 auto;
+    width: 100%;
 }
 
 #next_three-one {
@@ -212,9 +228,10 @@
     top: 3.2rem;
     margin-left: -1.6rem;
     text-align: center;
-    animation-duration: 0.8s;
-    /* opacity: 0;
-	animation-duration: 4s; */
+    animation-duration: 0.5s;
+    opacity: 0;
+    animation-delay: 1.6s;
+	/* animation-duration: 4s; */
 }
 
 #next_three-two {
@@ -223,10 +240,10 @@
     top: 5rem;
     margin-left: -1.5rem;
     text-align: center;
-    animation-duration: 0.8s;
-    animation-delay: 1.2s;
-    /* opacity: 0;
-	animation-duration: 4s; */
+    animation-duration: 0.5s;
+    animation-delay: 2.2s;
+     opacity: 0;
+	/*animation-duration: 4s; */
 }
 
 #next_three-one img {
