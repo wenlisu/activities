@@ -67,7 +67,15 @@ var eye_timer, changeSrc = './images/one/6_people.png',
     defaultSrc = './images/one/7_people.png';
 
 function next_pageone() {
-    audioPlay('music2');
+    wx.ready(function() {
+        music2.play();
+    });
+    if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+        WeixinJSBridge.invoke('getNetworkType', {}, function(res) {
+            music2.play();
+        });
+    }
+    music2.play();
     // 文字逐行显示
     $("#next_pageone_one").addClass('animated zoomIn');
     $("#next_pageone_two").addClass('animated zoomIn');
@@ -289,5 +297,15 @@ function audioPlay(elem) {
         WeixinJSBridge.invoke('getNetworkType', {}, function(res) {
             media.play();
         });
+    }
+}
+var music2 = new Audio();
+music2.src = './video/music.mp3';
+var music_options = {
+    preload: 'auto'
+}
+for (var key in music_options) {
+    if (music_options.hasOwnProperty(key) && (key in music2)) {
+        music2[key] = music_options[key];
     }
 }
