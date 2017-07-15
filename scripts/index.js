@@ -1,60 +1,60 @@
-$(function() {
-    setTimeout(function() {
+$(function () {
+    setTimeout(function () {
         pageOne();
     }, 50);
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12'],
         lazyLoading: true,
-        afterLoad: function(link, index) {
+        afterLoad: function (link, index) {
             if (index > 1) {
                 audioPlay('music');
             }
             if (index == 1) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageOne();
                 }, 50);
             } else if (index == 2) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageTow()
                 }, 50);
             } else if (index == 3) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageThree();
                 }, 50);
             } else if (index == 4) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageFour();
                 }, 50);
             } else if (index == 5) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageFive();
                 }, 50);
             } else if (index == 6) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageSix();
                 }, 50);
             } else if (index == 7) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pegeSeven();
                 }, 50);
             } else if (index == 8) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageEight();
                 }, 50);
             } else if (index == 9) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageNine();
                 }, 50);
             } else if (index == 10) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageTen();
                 }, 50);
             } else if (index == 11) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageEleven();
                 }, 50);
             } else if (index == 12) {
-                setTimeout(function() {
+                setTimeout(function () {
                     pageTwelve();
                 }, 50);
                 weixinOpen();
@@ -62,7 +62,7 @@ $(function() {
                 $.fn.fullpage.setAllowScrolling(false);
             }
         },
-        onLeave: function(index) {
+        onLeave: function (index) {
             $('.section div div').removeClass();
             if (index == 11) {
                 $("#girl2").animate({
@@ -79,50 +79,50 @@ var eye_timer, changeSrc = './images/one/6_people.png',
     defaultSrc = './images/one/7_people.png';
 
 function pageOne() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-one").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-three").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-four").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-one").addClass('animated fadeIn')
     }, 2000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-six").addClass('animated fadeIn')
     }, 2500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-seven").addClass('animated fadeIn')
     }, 3000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-eighty").addClass('animated fadeIn')
     }, 3500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-nine").addClass('animated fadeIn')
     }, 4000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#one-ten").addClass('animated fadeIn')
     }, 4500);
 }
 
 function pageTow() {
     // $("#two-bg").addClass('animated fadeIn')
-    setTimeout(function() {
+    setTimeout(function () {
         $("#two-one").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#two-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#two-three").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#two-four").addClass('animated fadeIn')
     }, 1500);
 }
@@ -130,23 +130,23 @@ function pageTow() {
 function pageThree() {
     // 文字逐行显示
     // $("#three-bg").addClass('animated fadeIn')
-    setTimeout(function() {
+    setTimeout(function () {
         $("#three-one").addClass('animated bounceIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#three-two").addClass('animated bounceIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#three-three").addClass('animated bounceIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#three-four").addClass('animated bounceIn')
     }, 1500);
 }
 
 function pageFour() {
     // $("#four-bg").addClass('animated fadeIn')
-    setTimeout(function() {
+    setTimeout(function () {
         $("#four-one").addClass('animated fadeIn')
     }, 100);
 }
@@ -154,17 +154,17 @@ function pageFour() {
 function pageFive() {
     // $("#five-bg").addClass('animated fadeIn')
     // 文字逐行显示
-    setTimeout(function() {
+    setTimeout(function () {
         $("#girl").addClass('animated fadeIn')
         $("#boy").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#min-love").addClass('animated bounceIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#max-love").addClass('animated bounceIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#max-love-font").addClass('animated fadeIn')
     }, 1500);
 }
@@ -172,54 +172,54 @@ function pageFive() {
 function pageSix() {
     // $("#six-bg").addClass('animated fadeIn')
     // 文字逐行显示
-    setTimeout(function() {
+    setTimeout(function () {
         $("#six-people").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#six-one").addClass('animated fadeIn')
         $("#six-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#six-three").addClass('animated fadeIn')
         $("#six-four").addClass('animated fadeIn')
     }, 2800);
-    setTimeout(function() {
-        eye_timer = setInterval(function() {
+    setTimeout(function () {
+        eye_timer = setInterval(function () {
             eye("#openSixEye", changeSrc)
         }, 50);
     }, 1800);
 }
 
 function pegeSeven() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-people").addClass('animated fadeIn');
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-one").addClass('animated fadeIn');
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-two").addClass('animated fadeIn');
     }, 1500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-three").addClass('animated fadeIn');
     }, 2500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-four").addClass('animated fadeIn');
     }, 3300);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-five").addClass('animated fadeIn');
     }, 3800);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-six").addClass('animated fadeIn');
     }, 4300);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-seven").addClass('animated fadeIn');
     }, 4800);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#seven-eight").addClass('animated fadeIn');
     }, 5300);
-    setTimeout(function() {
-        eye_timer = setInterval(function() {
+    setTimeout(function () {
+        eye_timer = setInterval(function () {
             eye("#openSevenEye", changeSrc)
         }, 50);
     }, 1500);
@@ -227,44 +227,44 @@ function pegeSeven() {
 
 function pageEight() {
     // $("#eight-bg").addClass('animated fadeIn')
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-one").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-two").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-three").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-four").addClass('animated fadeIn')
     }, 2000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-five").addClass('animated fadeIn')
     }, 2500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-six").addClass('animated fadeIn')
     }, 3000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-seven").addClass('animated fadeIn')
     }, 3500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-eight").addClass('animated fadeIn')
     }, 4000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-nine").addClass('animated fadeIn')
     }, 4500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-ten").addClass('animated fadeIn')
     }, 5000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-eleven").addClass('animated fadeIn')
     }, 5500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eight-twelve").addClass('animated fadeIn')
     }, 6000);
-    setTimeout(function() {
-        eye_timer = setInterval(function() {
+    setTimeout(function () {
+        eye_timer = setInterval(function () {
             eye("#openEightEye", changeSrc)
         }, 50);
     }, 2000);
@@ -272,67 +272,67 @@ function pageEight() {
 }
 
 function pageNine() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#nineGirl").addClass('animated fadeIn')
         $("#nineBoy").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#nine-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#nine-three").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#nine-four").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#nine-five").addClass('animated fadeIn')
     }, 2000);
 }
 
 function pageTen() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-people").addClass('animated fadeIn')
         $("#ten-one").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-three").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-four").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-five").addClass('animated fadeIn')
     }, 2500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-six").addClass('animated fadeIn')
     }, 3000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-seven").addClass('animated fadeIn')
     }, 3500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-eight").addClass('animated fadeIn')
     }, 4000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#ten-nine").addClass('animated fadeIn')
     }, 4500);
 
 }
 
 function pageEleven() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eleven-one").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eleven-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#eleven-three").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#girl2").animate({
             left: '0.2rem'
         }, "slow")
@@ -343,28 +343,28 @@ function pageEleven() {
 }
 
 function pageTwelve() {
-    setTimeout(function() {
+    setTimeout(function () {
         $("#twelve-one").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#twelve-two").addClass('animated fadeIn')
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#twelve-three").addClass('animated fadeIn')
     }, 1000);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#twelve-four").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function() {
+    setTimeout(function () {
         $("#twelve-five").addClass('animated fadeIn')
     }, 2000);
 }
 //眨眼
 function eye(elem, src) {
-    setTimeout(function() {
+    setTimeout(function () {
         $(elem).attr("src", changeSrc);
     }, 500);
-    setTimeout(function() {
+    setTimeout(function () {
         $(elem).attr("src", defaultSrc);
 
     }, 1500);
@@ -382,12 +382,12 @@ wx.config({
 });
 //背景音乐
 function audioPlay(elem) {
-    wx.ready(function() {
+    wx.ready(function () {
         document.getElementById(elem).play();
     });
     var media = document.getElementById(elem);
     if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
-        WeixinJSBridge.invoke('getNetworkType', {}, function(res) {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
             media.play();
         });
     }
@@ -452,23 +452,25 @@ function weixin(event) {
 
         if (speed > shakeThreshold) {
             //TODO 相关方法，比如：
-            wx.ready(function() {
+            wx.ready(function () {
                 shakeAudio.play();
             });
             if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
-                WeixinJSBridge.invoke('getNetworkType', {}, function(res) {
+                WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
                     shakeAudio.play();
                 });
             }
             shakeAudio.play();
+            $('#gif').css('display', 'block');
             $('#twelve-threeshake_box').addClass('shake_box_focus');
             clearTimeout(shakeTimeout);
-            var shakeTimeout = setTimeout(function() {
+            var shakeTimeout = setTimeout(function () {
                 $('#twelve-three').removeClass('shake_box_focus');
             }, 1000)
-            setTimeout(function() {
+            setTimeout(function () {
                 window.removeEventListener('devicemotion', weixin, false);
                 window.location.href = "./page.html";
+                $('#gif').css('display', 'none');
             }, 3000);
         }
         lastShakeX = curShakeX;
