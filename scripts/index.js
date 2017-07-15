@@ -508,7 +508,7 @@ function weixin(event) {
             }, 500);
             setTimeout(function() {
                 window.removeEventListener('devicemotion', weixin, false);
-                window.location.href = "./page.html";
+                window.location.href = "http://gzabctest.3gmsc.com/zrproject/lover/loveOAuth/wx42430341bf34096c/c798f14a4892f6067f8ecf897d918988";
                 $('#gif').css('display', 'none');
             }, 3000);
         }
