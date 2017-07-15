@@ -467,6 +467,7 @@ function weixin(event) {
                 $('#twelve-three').removeClass('shake_box_focus');
             }, 1000)
             setTimeout(function() {
+                window.removeEventListener('devicemotion', weixin, false);
                 window.location.href = "./page.html";
             }, 3000);
         }

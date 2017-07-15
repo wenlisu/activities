@@ -275,7 +275,7 @@ function next_pageNine() {
     }, 4000);
     setTimeout(function() {
         $.fn.fullpage.moveTo(10, 0);
-    }, 5500);
+    }, 6000);
 }
 
 function next_pageTen() {
