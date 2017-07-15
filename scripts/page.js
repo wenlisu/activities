@@ -1,18 +1,15 @@
 $(function() {
     setTimeout(function() {
         next_pageone();
-        window.removeEventListener('devicemotion', weixin, false);
+        $.fn.fullpage.setAllowScrolling(false);
     }, 50);
     $('#fullpage').fullpage({
         anchors: ['next_pageone', 'next_pagetwo', 'next_pagethree', 'next_pagefour', 'next_pagefive', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
         afterLoad: function(link, index) {
-            $.fn.fullpage.setAllowScrolling(false);
             if ($('.next_pageone').hasClass('active')) {
-                window.removeEventListener('devicemotion', weixin, false);
-                setTimeout(function() {
-                    next_pageone();
-                }, 50);
+                next_pageone();
+                $.fn.fullpage.setAllowScrolling(false);
             }
             if ($('.next_pagetwo').hasClass('active')) {
                 next_pageTwo();
@@ -65,8 +62,6 @@ $(function() {
         }
     });
 });
-var eye_timer, changeSrc = './images/one/6_people.png',
-    defaultSrc = './images/one/7_people.png';
 
 function next_pageone() {
     wx.ready(function() {
@@ -96,9 +91,9 @@ function next_pageone() {
         $("#next_pageone_four").addClass('animated zoomOut');
     }, 4000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(14, 0);
+        console.log('2');
+        $.fn.fullpage.moveTo(2, 0);
     }, 5000);
-
 }
 
 function next_pageTwo() {
@@ -119,7 +114,7 @@ function next_pageTwo() {
         $("#next_two-four").addClass('animated zoomOut');
     }, 5000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(15, 0);
+        $.fn.fullpage.moveTo(3, 0);
     }, 6000);
 }
 
@@ -170,7 +165,7 @@ function next_pageFour() {
     //     $("#next_four-five").addClass('animated zoomOut');
     // }, 2000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(17, 0);
+        $.fn.fullpage.moveTo(5, 0);
     }, 6400);
 }
 
@@ -193,7 +188,7 @@ function next_pageFive() {
     }, 4000);
 
     setTimeout(function() {
-        $.fn.fullpage.moveTo(18, 0);
+        $.fn.fullpage.moveTo(6, 0);
     }, 6000);
 }
 
@@ -221,7 +216,7 @@ function next_pageSix() {
         $("#next_six-five").addClass('animated zoomOut');
     }, 6000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(19, 0);
+        $.fn.fullpage.moveTo(7, 0);
     }, 7000);
 }
 
@@ -239,7 +234,7 @@ function next_pageSeven() {
         $("#next_seven-three").addClass('animated zoomOutRight');
     }, 3000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(20, 0);
+        $.fn.fullpage.moveTo(8, 0);
     }, 6000);
 }
 
@@ -261,7 +256,7 @@ function next_pageEight() {
         $("#next_eight-four").addClass('animated zoomOutLeft');
     }, 4500);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(21, 0);
+        $.fn.fullpage.moveTo(9, 0);
     }, 5500);
 }
 
@@ -319,18 +314,7 @@ wx.config({
     signature: '',
     jsApiList: []
 });
-//背景音乐
-function audioPlay(elem) {
-    wx.ready(function() {
-        document.getElementById(elem).play();
-    });
-    var media = document.getElementById(elem);
-    if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
-        WeixinJSBridge.invoke('getNetworkType', {}, function(res) {
-            media.play();
-        });
-    }
-}
+
 var music2 = new Audio();
 music2.src = './video/music.mp3';
 var music_options = {
