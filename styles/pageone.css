@@ -897,7 +897,7 @@ body {
 #twelve-three {
     position: absolute;
     left: 0rem;
-    top: 0.3rem;
+    top: 0rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -1005,7 +1005,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.885rem;
-    margin-top:-3.2rem;
+    margin-top: -3.2rem;
     animation-delay: 2s;
     animation-duration: 3s;
 }
@@ -1051,8 +1051,8 @@ body {
     opacity: 0;
     position: absolute;
     left: 50%;
-    top:50%;
-    margin-top:-1.15rem;
+    top: 50%;
+    margin-top: -1.15rem;
     margin-left: -1.34rem;
     animation-delay: 5s;
     animation-duration: 3s;
@@ -1069,7 +1069,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -0.545rem;
-    margin-top:-0.05rem;
+    margin-top: -0.05rem;
     animation-delay: 6s;
     animation-duration: 3s;
 }
@@ -1101,7 +1101,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.795rem;
-    margin-top:1.35rem;
+    margin-top: 1.35rem;
     animation-delay: 8s;
     animation-duration: 3s;
 }
@@ -1117,7 +1117,7 @@ body {
     left: 50%;
     top: 50%;
     margin-left: -1.6rem;
-    margin-top:2.35rem;
+    margin-top: 2.35rem;
     animation-delay: 9s;
     animation-duration: 3s;
 }
@@ -1373,13 +1373,14 @@ body {
     bottom: 0;
     opacity: 0;
 }
+
 .pagenine #nineGirl img {
     position: absolute;
     left: 0.3rem;
     bottom: 0;
     animation-duration: 3s;
     width: 2.5rem;
-    height:4.37rem;
+    height: 4.37rem;
 }
 
 .pagenine #nineBoy {
@@ -1439,8 +1440,10 @@ body {
     right: -3.8rem;
 }
 
+
 /* gif */
-#gif{
+
+#gif {
     position: absolute;
     background: #000;
     top: 0;
@@ -1448,8 +1451,10 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
+    display: none;
 }
-#gif img{
+
+#gif img {
     width: 100%;
     height: 100%;
 }
