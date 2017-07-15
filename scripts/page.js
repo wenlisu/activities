@@ -132,7 +132,7 @@ function next_pageThree() {
         $("#next_pagethree-bg").addClass('animated zoomOut');
     }, 4000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(16, 0);
+        $.fn.fullpage.moveTo(4, 0);
     }, 4500);
 }
 
@@ -165,7 +165,7 @@ function next_pageFour() {
     //     $("#next_four-five").addClass('animated zoomOut');
     // }, 2000);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(5, 0);
+        // $.fn.fullpage.moveTo(5, 0);
     }, 6400);
 }
 
