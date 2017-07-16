@@ -107,21 +107,21 @@ function next_pageone() {
     $("#next_pageone_one").animate({
         top: '50%',
         opacity: '1'
-    }, 800, function() {
+    }, 1200, function() {
         $("#next_pageone_two").animate({
             top: '50%',
             opacity: '1'
-        }, 800, function() {
+        }, 1200, function() {
             $("#next_pageone_three").animate({
                 top: '50%',
                 opacity: '1'
-            }, 800, function() {
+            }, 1200, function() {
                 setTimeout(function() {
                     $("#next_pageone_one").addClass('animated zoomOut');
                     $("#next_pageone_two").addClass('animated zoomOut');
                     $("#next_pageone_three").addClass('animated zoomOut');
                     $("#next_pageone_four").addClass('animated zoomOut');
-                }, 1000);
+                }, 1600);
             })
         })
     })
