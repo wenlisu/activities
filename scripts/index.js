@@ -127,7 +127,7 @@ $(document).ready(function() {
                     "type": "AUDIO",
                     "sources": {
                         "mp3": {
-                            "source": "./video/yinyue.mp3",
+                            "source": "video/yinyue.mp3",
                             "size": 2820563
                         }
                     }
