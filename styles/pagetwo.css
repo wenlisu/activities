@@ -52,7 +52,7 @@
 
 #next_pageone_one {
     width: 100%;
-    top: 50%;
+    top: 120%;
     margin-top: -2rem;
     text-align: center;
     opacity: 0;
@@ -67,12 +67,12 @@
 
 #next_pageone_two {
     width: 100%;
-    top: 50%;
+    top: 120%;
     margin-top: -0.4rem;
     text-align: center;
     opacity: 0;
     animation-duration: 0.5s;
-    animation-delay: 1.2s;
+    /* animation-delay: 1.2s; */
 }
 
 #next_pageone_two img {
@@ -82,13 +82,13 @@
 
 #next_pageone_three {
     width: 100%;
-    top: 50%;
+    top: 120%;
     margin-left: 0.4rem;
     margin-top: 1.0rem;
     text-align: center;
     opacity: 0;
     animation-duration: 0.4s;
-    animation-delay: 2.2s;
+    /* animation-delay: 2.2s; */
 }
 
 #next_pageone_three img {
@@ -130,7 +130,7 @@
     position: absolute;
     left: 50%;
     top: 3.2rem;
-    margin-left: -0.7rem;
+    margin-left: -0.8rem;
     text-align: center;
     animation-duration: 0.8s;
     opacity: 0;
@@ -202,8 +202,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background:#000;
+    background: #000;
 }
+
 #next_pagethree-bg {
     position: absolute;
     left: 0;
@@ -217,8 +218,9 @@
     animation-duration: 0.5s;
     animation-delay: 0.8s;
 }
-#next_pagethree-bg img{
-    margin:0 auto;
+
+#next_pagethree-bg img {
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -231,7 +233,7 @@
     animation-duration: 0.5s;
     opacity: 0;
     animation-delay: 1.6s;
-	/* animation-duration: 4s; */
+    /* animation-duration: 4s; */
 }
 
 #next_three-two {
@@ -242,8 +244,8 @@
     text-align: center;
     animation-duration: 0.5s;
     animation-delay: 2.2s;
-     opacity: 0;
-	/*animation-duration: 4s; */
+    opacity: 0;
+    /*animation-duration: 4s; */
 }
 
 #next_three-one img {
@@ -542,7 +544,7 @@
     min-width: 0;
     border: 1px solid #00a0ea;
     font-family: "微软雅黑";
-    font-family: 0.18rem;
+    font-size: 0.36rem;
     color: #212121;
     padding-left: 10px;
 }
@@ -692,7 +694,7 @@
 #next_five-two {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 120%;
     margin-top: 0.4rem;
     width: 100%;
     text-align: center;
@@ -708,7 +710,7 @@
 #next_five-three {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 120%;
     width: 100%;
     margin-top: 1.7rem;
     text-align: center;
@@ -724,7 +726,7 @@
 #next_five-four {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 120%;
     margin-top: 2.9rem;
     width: 100%;
     text-align: center;
