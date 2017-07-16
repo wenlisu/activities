@@ -5,12 +5,10 @@ $(function() {
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12'],
         lazyLoading: true,
-        afterLoad: function (link, index) {
+        loopBottom: false,
+        afterLoad: function(link, index) {
             // 禁止手动进入下一页
             $.fn.fullpage.setAllowScrolling(false);
-            if (index > 1) {
-                audioPlay('music');
-            }
             if (index == 1) {
                 setTimeout(function() {
                     pageOne();
@@ -80,6 +78,7 @@ var eye_timer, changeSrc = './images/one/6_people.png',
     defaultSrc = './images/one/7_people.png';
 
 function pageOne() {
+    audioPlay('music');
     setTimeout(function() {
         $("#one-one").addClass('animated fadeIn')
     }, 100);
@@ -110,8 +109,9 @@ function pageOne() {
     setTimeout(function() {
         $("#one-ten").addClass('animated fadeIn')
     }, 4500);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(2, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(2, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 16000);
 }
 
@@ -129,8 +129,9 @@ function pageTow() {
     setTimeout(function() {
         $("#two-four").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(3, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(3, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 4000);
 }
 
@@ -149,8 +150,9 @@ function pageThree() {
     setTimeout(function() {
         $("#three-four").addClass('animated bounceIn')
     }, 1500);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(4, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(4, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 6000);
 }
 
@@ -159,8 +161,9 @@ function pageFour() {
     setTimeout(function() {
         $("#four-one").addClass('animated fadeIn')
     }, 100);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(5, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(5, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 2500);
 }
 
@@ -180,8 +183,9 @@ function pageFive() {
     setTimeout(function() {
         $("#max-love-font").addClass('animated fadeIn')
     }, 1500);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(6, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(6, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 5000);
 }
 
@@ -204,8 +208,9 @@ function pageSix() {
             eye("#openSixEye", changeSrc)
         }, 50);
     }, 1800);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(7, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(7, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 5500)
 }
 
@@ -242,8 +247,9 @@ function pegeSeven() {
             eye("#openSevenEye", changeSrc)
         }, 50);
     }, 1500);
-    setTimeout(function () {
-        $.fn.fullpage.moveTo(8, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(8, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 8000)
 }
 
@@ -290,8 +296,9 @@ function pageEight() {
             eye("#openEightEye", changeSrc)
         }, 50);
     }, 2000);
-   setTimeout(function () {
-        $.fn.fullpage.moveTo(9, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(9, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 8000)
 }
 
@@ -312,8 +319,9 @@ function pageNine() {
     setTimeout(function() {
         $("#nine-five").addClass('animated fadeIn')
     }, 2000);
-   setTimeout(function () {
-        $.fn.fullpage.moveTo(10, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(10, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 4000)
 }
 
@@ -346,8 +354,9 @@ function pageTen() {
     setTimeout(function() {
         $("#ten-nine").addClass('animated fadeIn')
     }, 4500);
-   setTimeout(function () {
-        $.fn.fullpage.moveTo(11, 0)
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(11, 0)
+        $.fn.fullpage.moveSectionDown();
     }, 8000)
 }
 
@@ -369,8 +378,9 @@ function pageEleven() {
             right: '0.2rem'
         }, "slow")
     }, 2500);
-   setTimeout(function () {
-        $.fn.fullpage.moveTo(12, 0);
+    setTimeout(function() {
+        // $.fn.fullpage.moveTo(12, 0);
+        $.fn.fullpage.moveSectionDown();
     }, 4500)
 }
 
@@ -493,14 +503,13 @@ function weixin(event) {
                 });
             }
             shakeAudio.play();
-            $('#twelve-threeshake_box').addClass('shake_box_focus');
-            clearTimeout(shakeTimeout);
-            var shakeTimeout = setTimeout(function() {
-                $('#twelve-three').removeClass('shake_box_focus');
-            }, 1000)
+            setTimeout(function() {
+                $('#gif').css('display', 'block');
+            }, 500);
             setTimeout(function() {
                 window.removeEventListener('devicemotion', weixin, false);
-                window.location.href = "./page.html";
+                window.location.href = "http://gzabctest.3gmsc.com/zrproject/lover/loveOAuth/wx42430341bf34096c/c798f14a4892f6067f8ecf897d918988";
+                $('#gif').css('display', 'none');
             }, 3000);
         }
         lastShakeX = curShakeX;
