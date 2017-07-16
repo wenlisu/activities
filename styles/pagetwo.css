@@ -1,10 +1,12 @@
 .next_section {
     position: relative;
     display: none;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
-
+#fullpage{
+    background: #000;
+}
 /*滚动条 start*/
 
  ::-webkit-scrollbar {
