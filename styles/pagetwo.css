@@ -129,8 +129,8 @@
 #next_two-one {
     position: absolute;
     left: 50%;
-    top: 3.2rem;
-    margin-left: -0.8rem;
+    top: 3rem;
+    margin-left: -0.7rem;
     text-align: center;
     animation-duration: 0.8s;
     opacity: 0;
@@ -215,7 +215,7 @@
     align-items: center;
     background: #000;
     opacity: 0;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-delay: 0.8s;
 }
 
@@ -230,7 +230,7 @@
     top: 3.2rem;
     margin-left: -1.6rem;
     text-align: center;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     opacity: 0;
     animation-delay: 1.6s;
     /* animation-duration: 4s; */
@@ -242,7 +242,7 @@
     top: 5rem;
     margin-left: -1.5rem;
     text-align: center;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-delay: 2.2s;
     opacity: 0;
     /*animation-duration: 4s; */
@@ -279,6 +279,7 @@
     margin-left: -2.5rem;
     animation-duration: 0.8s;
     opacity: 0;
+    animation-delay: 1s;
     /* nimation-duration: 4s; */
 }
 
@@ -289,7 +290,7 @@
     text-align: center;
     margin-left: -2.5rem;
     animation-duration: 0.8s;
-    animation-delay: 1s;
+    animation-delay: 2s;
     opacity: 0;
     /* animation-duration: 4s; */
 }
@@ -301,7 +302,7 @@
     text-align: center;
     margin-left: -2.5rem;
     animation-duration: 0.8s;
-    animation-delay: 2s;
+    animation-delay: 3s;
     opacity: 0;
     /* animation-duration: 4s; */
 }
@@ -313,7 +314,7 @@
     text-align: center;
     margin-left: -2.5rem;
     animation-duration: 0.8s;
-    animation-delay: 3s;
+    animation-delay: 4s;
     opacity: 0;
     /* animation-duration: 4s; */
 }
@@ -325,7 +326,7 @@
     margin-left: -3.17rem;
     text-align: center;
     animation-duration: 0.8s;
-    animation-delay: 4s;
+    /*animation-delay: 4s;*/
     opacity: 0;
     /* animation-duration: 4s; */
 }
@@ -758,7 +759,7 @@
     top: 0.5rem;
     margin-left: -2rem;
     text-align: center;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     opacity: 0;
 }
 
@@ -768,7 +769,7 @@
     top: 1.6rem;
     margin-left: -3rem;
     text-align: center;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     /*animation-delay: 1.2s;*/
     opacity: 0;
 }
@@ -779,7 +780,7 @@
     top: 2.8rem;
     margin-left: -3rem;
     text-align: center;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     /*animation-delay: 2.2s;*/
     opacity: 0;
 }
@@ -790,7 +791,7 @@
     top: 5rem;
     margin-left: -3rem;
     text-align: center;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     /*animation-delay: 4.2s;*/
     opacity: 0;
 }
@@ -800,7 +801,7 @@
     top: 0rem;
     left: 0rem;
     text-align: center;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     /*animation-delay: 5.2s;*/
     opacity: 0;
 }
