@@ -1,6 +1,10 @@
 .next_section {
     position: relative;
     display: none;
+    /*overflow: hidden;*/
+}
+
+#fullpage {
     background: #000;
 }
 

@@ -4,6 +4,7 @@ $(function() {
         $.fn.fullpage.setAllowScrolling(false);
     }, 50);
     $('#fullpage').fullpage({
+        slidesColor:['#000','#000','#000','#000','#000','#000','#000','#000','#000','#000'],
         anchors: ['next_pageone', 'next_pagetwo', 'next_pagethree', 'next_pagefour', 'next_pagefive', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
         slidesColor: '#000',
@@ -193,7 +194,7 @@ function next_pageFour() {
         $("#next_four-four").addClass('animated zoomOut');
     }, 4500);
     setTimeout(function() {
-        $.fn.fullpage.moveTo(5, 0);
+        // $.fn.fullpage.moveTo(5, 0);
         $.fn.fullpage.moveSectionDown();
     }, 8400);
 }
