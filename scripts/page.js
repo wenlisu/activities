@@ -125,7 +125,6 @@ function next_pageone() {
         })
     })
     setTimeout(function() {
-<<<<<<< HEAD
         $("#next_pageone_one").addClass('animated zoomOut');
     }, 5500);
     setTimeout(function() {
@@ -140,11 +139,6 @@ function next_pageone() {
     setTimeout(function() {
         $.fn.fullpage.moveTo(2, 0);
     }, 6500);
-=======
-        // $.fn.fullpage.moveTo(2, 0);
-        $.fn.fullpage.moveSectionDown();
-    }, 5000);
->>>>>>> ddda44822bb2f0a884072f4c2858e9ec265c379b
 }
 
 function next_pageTwo() {
@@ -165,14 +159,8 @@ function next_pageTwo() {
         $("#next_two-four").addClass('animated zoomOut');
     }, 5000);
     setTimeout(function() {
-<<<<<<< HEAD
         $.fn.fullpage.moveTo(3, 0);
     }, 6500);
-=======
-        // $.fn.fullpage.moveTo(3, 0);
-        $.fn.fullpage.moveSectionDown();
-    }, 6000);
->>>>>>> ddda44822bb2f0a884072f4c2858e9ec265c379b
 }
 
 function next_pageThree() {
