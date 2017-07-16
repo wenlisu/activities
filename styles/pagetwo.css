@@ -7,9 +7,11 @@
     overflow: hidden;
 }
 
-#fullpage{
+#fullpage {
     background: #000;
 }
+
+
 /*滚动条 start*/
 
  ::-webkit-scrollbar {

@@ -7,6 +7,7 @@ $(function() {
         slidesColor:['#000','#000','#000','#000','#000','#000','#000','#000','#000','#000'],
         anchors: ['next_pageone', 'next_pagetwo', 'next_pagethree', 'next_pagefour', 'next_pagefive', 'next_pagesix', 'next_pageseven', 'next_pageeighty', 'next_pagenine', 'next_pageten'],
         lazyLoading: true,
+        slidesColor: '#000',
         afterLoad: function(link, index) {
             if ($('.next_pageone').hasClass('active')) {
                 next_pageone();
@@ -125,7 +126,6 @@ function next_pageone() {
         })
     })
     setTimeout(function() {
-        // $.fn.fullpage.moveTo(2, 0);
         $.fn.fullpage.moveSectionDown();
     }, 5000);
 }
